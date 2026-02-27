@@ -1,0 +1,42 @@
+name: Google Docs API
+description: API for creating, reading, and editing Google Docs documents
+image: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
+url: https://developers.google.com/docs/api
+created: '2024-01-01'
+modified: '2024-01-01'
+apis:
+- name: Google Docs API
+  description: The Google Docs API lets you create and modify documents
+  image: https://www.gstatic.com/images/branding/product/2x/docs_48dp.png
+  humanUrl: https://developers.google.com/docs/api
+  baseUrl: https://docs.googleapis.com
+  version: v1
+  properties:
+  - type: Documentation
+    url: https://developers.google.com/docs/api/reference/rest
+  - type: OpenAPI
+    url: https://docs.googleapis.com/$discovery/rest?version=v1
+  - type: Authentication
+    url: https://developers.google.com/docs/api/how-tos/authorizing
+  - type: Quickstart
+    url: https://developers.google.com/docs/api/quickstart/python
+  - type: Pricing
+    url: https://developers.google.com/docs/api/limits
+  - type: TermsOfService
+    url: https://developers.google.com/terms
+  - type: Support
+    url: https://developers.google.com/docs/api/support
+  tags:
+  - documents
+  - productivity
+  - collaboration
+  - word-processing
+  - google-workspace
+maintainers:
+- name: Google
+  email: googleapis-packages@google.com
+  url: https://cloud.google.com
+tags:
+- documents
+- productivity
+- APIs

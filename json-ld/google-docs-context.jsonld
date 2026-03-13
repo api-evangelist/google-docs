@@ -1,0 +1,872 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "https://developers.google.com/docs/api/reference/rest/v1/documents#",
+    "schema": "https://schema.org/",
+    "gdocs": "https://developers.google.com/docs/api/reference/rest/v1/documents#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "Document": {
+      "@id": "gdocs:Document",
+      "@context": {
+        "documentId": {
+          "@id": "gdocs:Document.documentId",
+          "@type": "xsd:string"
+        },
+        "title": {
+          "@id": "schema:name",
+          "@type": "xsd:string"
+        },
+        "tabs": {
+          "@id": "gdocs:Document.tabs",
+          "@type": "@id",
+          "@container": "@list"
+        },
+        "revisionId": {
+          "@id": "schema:version",
+          "@type": "xsd:string"
+        },
+        "suggestionsViewMode": {
+          "@id": "gdocs:Document.suggestionsViewMode",
+          "@type": "xsd:string"
+        },
+        "body": {
+          "@id": "gdocs:Document.body",
+          "@type": "@id"
+        },
+        "headers": {
+          "@id": "gdocs:Document.headers",
+          "@container": "@index"
+        },
+        "footers": {
+          "@id": "gdocs:Document.footers",
+          "@container": "@index"
+        },
+        "footnotes": {
+          "@id": "gdocs:Document.footnotes",
+          "@container": "@index"
+        },
+        "documentStyle": {
+          "@id": "gdocs:Document.documentStyle",
+          "@type": "@id"
+        },
+        "namedStyles": {
+          "@id": "gdocs:Document.namedStyles",
+          "@type": "@id"
+        },
+        "lists": {
+          "@id": "gdocs:Document.lists",
+          "@container": "@index"
+        },
+        "namedRanges": {
+          "@id": "gdocs:Document.namedRanges",
+          "@container": "@index"
+        },
+        "inlineObjects": {
+          "@id": "gdocs:Document.inlineObjects",
+          "@container": "@index"
+        },
+        "positionedObjects": {
+          "@id": "gdocs:Document.positionedObjects",
+          "@container": "@index"
+        }
+      }
+    },
+
+    "Tab": {
+      "@id": "gdocs:Tab",
+      "@context": {
+        "tabProperties": {
+          "@id": "gdocs:Tab.tabProperties",
+          "@type": "@id"
+        },
+        "childTabs": {
+          "@id": "gdocs:Tab.childTabs",
+          "@type": "@id",
+          "@container": "@list"
+        },
+        "documentTab": {
+          "@id": "gdocs:Tab.documentTab",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "TabProperties": {
+      "@id": "gdocs:TabProperties",
+      "@context": {
+        "tabId": {
+          "@id": "schema:identifier",
+          "@type": "xsd:string"
+        },
+        "title": {
+          "@id": "schema:name",
+          "@type": "xsd:string"
+        },
+        "parentTabId": {
+          "@id": "gdocs:TabProperties.parentTabId",
+          "@type": "xsd:string"
+        },
+        "index": {
+          "@id": "schema:position",
+          "@type": "xsd:integer"
+        }
+      }
+    },
+
+    "DocumentTab": {
+      "@id": "gdocs:DocumentTab",
+      "@context": {
+        "body": {
+          "@id": "gdocs:DocumentTab.body",
+          "@type": "@id"
+        },
+        "headers": {
+          "@id": "gdocs:DocumentTab.headers",
+          "@container": "@index"
+        },
+        "footers": {
+          "@id": "gdocs:DocumentTab.footers",
+          "@container": "@index"
+        },
+        "footnotes": {
+          "@id": "gdocs:DocumentTab.footnotes",
+          "@container": "@index"
+        },
+        "documentStyle": {
+          "@id": "gdocs:DocumentTab.documentStyle",
+          "@type": "@id"
+        },
+        "namedStyles": {
+          "@id": "gdocs:DocumentTab.namedStyles",
+          "@type": "@id"
+        },
+        "lists": {
+          "@id": "gdocs:DocumentTab.lists",
+          "@container": "@index"
+        },
+        "namedRanges": {
+          "@id": "gdocs:DocumentTab.namedRanges",
+          "@container": "@index"
+        },
+        "inlineObjects": {
+          "@id": "gdocs:DocumentTab.inlineObjects",
+          "@container": "@index"
+        },
+        "positionedObjects": {
+          "@id": "gdocs:DocumentTab.positionedObjects",
+          "@container": "@index"
+        }
+      }
+    },
+
+    "Body": {
+      "@id": "gdocs:Body",
+      "@context": {
+        "content": {
+          "@id": "gdocs:Body.content",
+          "@type": "@id",
+          "@container": "@list"
+        }
+      }
+    },
+
+    "StructuralElement": {
+      "@id": "gdocs:StructuralElement",
+      "@context": {
+        "startIndex": {
+          "@id": "gdocs:StructuralElement.startIndex",
+          "@type": "xsd:integer"
+        },
+        "endIndex": {
+          "@id": "gdocs:StructuralElement.endIndex",
+          "@type": "xsd:integer"
+        },
+        "paragraph": {
+          "@id": "gdocs:StructuralElement.paragraph",
+          "@type": "@id"
+        },
+        "sectionBreak": {
+          "@id": "gdocs:StructuralElement.sectionBreak",
+          "@type": "@id"
+        },
+        "table": {
+          "@id": "gdocs:StructuralElement.table",
+          "@type": "@id"
+        },
+        "tableOfContents": {
+          "@id": "gdocs:StructuralElement.tableOfContents",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "Paragraph": {
+      "@id": "gdocs:Paragraph",
+      "@context": {
+        "elements": {
+          "@id": "gdocs:Paragraph.elements",
+          "@type": "@id",
+          "@container": "@list"
+        },
+        "paragraphStyle": {
+          "@id": "gdocs:Paragraph.paragraphStyle",
+          "@type": "@id"
+        },
+        "bullet": {
+          "@id": "gdocs:Paragraph.bullet",
+          "@type": "@id"
+        },
+        "positionedObjectIds": {
+          "@id": "gdocs:Paragraph.positionedObjectIds",
+          "@container": "@list"
+        }
+      }
+    },
+
+    "ParagraphElement": {
+      "@id": "gdocs:ParagraphElement",
+      "@context": {
+        "startIndex": {
+          "@id": "gdocs:ParagraphElement.startIndex",
+          "@type": "xsd:integer"
+        },
+        "endIndex": {
+          "@id": "gdocs:ParagraphElement.endIndex",
+          "@type": "xsd:integer"
+        },
+        "textRun": {
+          "@id": "gdocs:ParagraphElement.textRun",
+          "@type": "@id"
+        },
+        "autoText": {
+          "@id": "gdocs:ParagraphElement.autoText",
+          "@type": "@id"
+        },
+        "pageBreak": {
+          "@id": "gdocs:ParagraphElement.pageBreak",
+          "@type": "@id"
+        },
+        "columnBreak": {
+          "@id": "gdocs:ParagraphElement.columnBreak",
+          "@type": "@id"
+        },
+        "footnoteReference": {
+          "@id": "gdocs:ParagraphElement.footnoteReference",
+          "@type": "@id"
+        },
+        "horizontalRule": {
+          "@id": "gdocs:ParagraphElement.horizontalRule",
+          "@type": "@id"
+        },
+        "equation": {
+          "@id": "gdocs:ParagraphElement.equation",
+          "@type": "@id"
+        },
+        "inlineObjectElement": {
+          "@id": "gdocs:ParagraphElement.inlineObjectElement",
+          "@type": "@id"
+        },
+        "person": {
+          "@id": "gdocs:ParagraphElement.person",
+          "@type": "@id"
+        },
+        "richLink": {
+          "@id": "gdocs:ParagraphElement.richLink",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "TextRun": {
+      "@id": "gdocs:TextRun",
+      "@context": {
+        "content": {
+          "@id": "schema:text",
+          "@type": "xsd:string"
+        },
+        "textStyle": {
+          "@id": "gdocs:TextRun.textStyle",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "TextStyle": {
+      "@id": "gdocs:TextStyle",
+      "@context": {
+        "bold": {
+          "@id": "gdocs:TextStyle.bold",
+          "@type": "xsd:boolean"
+        },
+        "italic": {
+          "@id": "gdocs:TextStyle.italic",
+          "@type": "xsd:boolean"
+        },
+        "underline": {
+          "@id": "gdocs:TextStyle.underline",
+          "@type": "xsd:boolean"
+        },
+        "strikethrough": {
+          "@id": "gdocs:TextStyle.strikethrough",
+          "@type": "xsd:boolean"
+        },
+        "smallCaps": {
+          "@id": "gdocs:TextStyle.smallCaps",
+          "@type": "xsd:boolean"
+        },
+        "backgroundColor": {
+          "@id": "gdocs:TextStyle.backgroundColor",
+          "@type": "@id"
+        },
+        "foregroundColor": {
+          "@id": "gdocs:TextStyle.foregroundColor",
+          "@type": "@id"
+        },
+        "fontSize": {
+          "@id": "gdocs:TextStyle.fontSize",
+          "@type": "@id"
+        },
+        "weightedFontFamily": {
+          "@id": "gdocs:TextStyle.weightedFontFamily",
+          "@type": "@id"
+        },
+        "baselineOffset": {
+          "@id": "gdocs:TextStyle.baselineOffset",
+          "@type": "xsd:string"
+        },
+        "link": {
+          "@id": "gdocs:TextStyle.link",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "ParagraphStyle": {
+      "@id": "gdocs:ParagraphStyle",
+      "@context": {
+        "headingId": {
+          "@id": "gdocs:ParagraphStyle.headingId",
+          "@type": "xsd:string"
+        },
+        "namedStyleType": {
+          "@id": "gdocs:ParagraphStyle.namedStyleType",
+          "@type": "xsd:string"
+        },
+        "alignment": {
+          "@id": "gdocs:ParagraphStyle.alignment",
+          "@type": "xsd:string"
+        },
+        "lineSpacing": {
+          "@id": "gdocs:ParagraphStyle.lineSpacing",
+          "@type": "xsd:float"
+        },
+        "direction": {
+          "@id": "gdocs:ParagraphStyle.direction",
+          "@type": "xsd:string"
+        },
+        "spaceAbove": {
+          "@id": "gdocs:ParagraphStyle.spaceAbove",
+          "@type": "@id"
+        },
+        "spaceBelow": {
+          "@id": "gdocs:ParagraphStyle.spaceBelow",
+          "@type": "@id"
+        },
+        "indentFirstLine": {
+          "@id": "gdocs:ParagraphStyle.indentFirstLine",
+          "@type": "@id"
+        },
+        "indentStart": {
+          "@id": "gdocs:ParagraphStyle.indentStart",
+          "@type": "@id"
+        },
+        "indentEnd": {
+          "@id": "gdocs:ParagraphStyle.indentEnd",
+          "@type": "@id"
+        },
+        "keepLinesTogether": {
+          "@id": "gdocs:ParagraphStyle.keepLinesTogether",
+          "@type": "xsd:boolean"
+        },
+        "keepWithNext": {
+          "@id": "gdocs:ParagraphStyle.keepWithNext",
+          "@type": "xsd:boolean"
+        },
+        "avoidWidowAndOrphan": {
+          "@id": "gdocs:ParagraphStyle.avoidWidowAndOrphan",
+          "@type": "xsd:boolean"
+        },
+        "pageBreakBefore": {
+          "@id": "gdocs:ParagraphStyle.pageBreakBefore",
+          "@type": "xsd:boolean"
+        }
+      }
+    },
+
+    "DocumentStyle": {
+      "@id": "gdocs:DocumentStyle",
+      "@context": {
+        "background": {
+          "@id": "gdocs:DocumentStyle.background",
+          "@type": "@id"
+        },
+        "defaultHeaderId": {
+          "@id": "gdocs:DocumentStyle.defaultHeaderId",
+          "@type": "xsd:string"
+        },
+        "defaultFooterId": {
+          "@id": "gdocs:DocumentStyle.defaultFooterId",
+          "@type": "xsd:string"
+        },
+        "useFirstPageHeaderFooter": {
+          "@id": "gdocs:DocumentStyle.useFirstPageHeaderFooter",
+          "@type": "xsd:boolean"
+        },
+        "useEvenPageHeaderFooter": {
+          "@id": "gdocs:DocumentStyle.useEvenPageHeaderFooter",
+          "@type": "xsd:boolean"
+        },
+        "pageNumberStart": {
+          "@id": "gdocs:DocumentStyle.pageNumberStart",
+          "@type": "xsd:integer"
+        },
+        "marginTop": {
+          "@id": "gdocs:DocumentStyle.marginTop",
+          "@type": "@id"
+        },
+        "marginBottom": {
+          "@id": "gdocs:DocumentStyle.marginBottom",
+          "@type": "@id"
+        },
+        "marginRight": {
+          "@id": "gdocs:DocumentStyle.marginRight",
+          "@type": "@id"
+        },
+        "marginLeft": {
+          "@id": "gdocs:DocumentStyle.marginLeft",
+          "@type": "@id"
+        },
+        "pageSize": {
+          "@id": "gdocs:DocumentStyle.pageSize",
+          "@type": "@id"
+        },
+        "flipPageOrientation": {
+          "@id": "gdocs:DocumentStyle.flipPageOrientation",
+          "@type": "xsd:boolean"
+        }
+      }
+    },
+
+    "Table": {
+      "@id": "gdocs:Table",
+      "@context": {
+        "rows": {
+          "@id": "gdocs:Table.rows",
+          "@type": "xsd:integer"
+        },
+        "columns": {
+          "@id": "gdocs:Table.columns",
+          "@type": "xsd:integer"
+        },
+        "tableRows": {
+          "@id": "gdocs:Table.tableRows",
+          "@type": "@id",
+          "@container": "@list"
+        },
+        "tableStyle": {
+          "@id": "gdocs:Table.tableStyle",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "TableRow": {
+      "@id": "gdocs:TableRow",
+      "@context": {
+        "startIndex": {
+          "@id": "gdocs:TableRow.startIndex",
+          "@type": "xsd:integer"
+        },
+        "endIndex": {
+          "@id": "gdocs:TableRow.endIndex",
+          "@type": "xsd:integer"
+        },
+        "tableCells": {
+          "@id": "gdocs:TableRow.tableCells",
+          "@type": "@id",
+          "@container": "@list"
+        },
+        "tableRowStyle": {
+          "@id": "gdocs:TableRow.tableRowStyle",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "TableCell": {
+      "@id": "gdocs:TableCell",
+      "@context": {
+        "startIndex": {
+          "@id": "gdocs:TableCell.startIndex",
+          "@type": "xsd:integer"
+        },
+        "endIndex": {
+          "@id": "gdocs:TableCell.endIndex",
+          "@type": "xsd:integer"
+        },
+        "content": {
+          "@id": "gdocs:TableCell.content",
+          "@type": "@id",
+          "@container": "@list"
+        },
+        "tableCellStyle": {
+          "@id": "gdocs:TableCell.tableCellStyle",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "Header": {
+      "@id": "gdocs:Header",
+      "@context": {
+        "headerId": {
+          "@id": "schema:identifier",
+          "@type": "xsd:string"
+        },
+        "content": {
+          "@id": "gdocs:Header.content",
+          "@type": "@id",
+          "@container": "@list"
+        }
+      }
+    },
+
+    "Footer": {
+      "@id": "gdocs:Footer",
+      "@context": {
+        "footerId": {
+          "@id": "schema:identifier",
+          "@type": "xsd:string"
+        },
+        "content": {
+          "@id": "gdocs:Footer.content",
+          "@type": "@id",
+          "@container": "@list"
+        }
+      }
+    },
+
+    "Footnote": {
+      "@id": "gdocs:Footnote",
+      "@context": {
+        "footnoteId": {
+          "@id": "schema:identifier",
+          "@type": "xsd:string"
+        },
+        "content": {
+          "@id": "gdocs:Footnote.content",
+          "@type": "@id",
+          "@container": "@list"
+        }
+      }
+    },
+
+    "InlineObject": {
+      "@id": "gdocs:InlineObject",
+      "@context": {
+        "objectId": {
+          "@id": "schema:identifier",
+          "@type": "xsd:string"
+        },
+        "inlineObjectProperties": {
+          "@id": "gdocs:InlineObject.inlineObjectProperties",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "EmbeddedObject": {
+      "@id": "gdocs:EmbeddedObject",
+      "@context": {
+        "title": {
+          "@id": "schema:name",
+          "@type": "xsd:string"
+        },
+        "description": {
+          "@id": "schema:description",
+          "@type": "xsd:string"
+        },
+        "size": {
+          "@id": "gdocs:EmbeddedObject.size",
+          "@type": "@id"
+        },
+        "imageProperties": {
+          "@id": "gdocs:EmbeddedObject.imageProperties",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "ImageProperties": {
+      "@id": "gdocs:ImageProperties",
+      "@context": {
+        "contentUri": {
+          "@id": "schema:contentUrl",
+          "@type": "xsd:anyURI"
+        },
+        "sourceUri": {
+          "@id": "schema:url",
+          "@type": "xsd:anyURI"
+        },
+        "brightness": {
+          "@id": "gdocs:ImageProperties.brightness",
+          "@type": "xsd:float"
+        },
+        "contrast": {
+          "@id": "gdocs:ImageProperties.contrast",
+          "@type": "xsd:float"
+        },
+        "transparency": {
+          "@id": "gdocs:ImageProperties.transparency",
+          "@type": "xsd:float"
+        },
+        "angle": {
+          "@id": "gdocs:ImageProperties.angle",
+          "@type": "xsd:float"
+        }
+      }
+    },
+
+    "Person": {
+      "@id": "schema:Person",
+      "@context": {
+        "personId": {
+          "@id": "schema:identifier",
+          "@type": "xsd:string"
+        },
+        "personProperties": {
+          "@id": "gdocs:Person.personProperties",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "PersonProperties": {
+      "@id": "gdocs:PersonProperties",
+      "@context": {
+        "name": {
+          "@id": "schema:name",
+          "@type": "xsd:string"
+        },
+        "email": {
+          "@id": "schema:email",
+          "@type": "xsd:string"
+        }
+      }
+    },
+
+    "RichLink": {
+      "@id": "gdocs:RichLink",
+      "@context": {
+        "richLinkId": {
+          "@id": "schema:identifier",
+          "@type": "xsd:string"
+        },
+        "richLinkProperties": {
+          "@id": "gdocs:RichLink.richLinkProperties",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "RichLinkProperties": {
+      "@id": "gdocs:RichLinkProperties",
+      "@context": {
+        "title": {
+          "@id": "schema:name",
+          "@type": "xsd:string"
+        },
+        "uri": {
+          "@id": "schema:url",
+          "@type": "xsd:anyURI"
+        },
+        "mimeType": {
+          "@id": "schema:encodingFormat",
+          "@type": "xsd:string"
+        }
+      }
+    },
+
+    "Link": {
+      "@id": "gdocs:Link",
+      "@context": {
+        "url": {
+          "@id": "schema:url",
+          "@type": "xsd:anyURI"
+        },
+        "bookmarkId": {
+          "@id": "gdocs:Link.bookmarkId",
+          "@type": "xsd:string"
+        },
+        "headingId": {
+          "@id": "gdocs:Link.headingId",
+          "@type": "xsd:string"
+        },
+        "tabId": {
+          "@id": "gdocs:Link.tabId",
+          "@type": "xsd:string"
+        }
+      }
+    },
+
+    "Dimension": {
+      "@id": "gdocs:Dimension",
+      "@context": {
+        "magnitude": {
+          "@id": "schema:value",
+          "@type": "xsd:float"
+        },
+        "unit": {
+          "@id": "schema:unitCode",
+          "@type": "xsd:string"
+        }
+      }
+    },
+
+    "Size": {
+      "@id": "gdocs:Size",
+      "@context": {
+        "height": {
+          "@id": "schema:height",
+          "@type": "@id"
+        },
+        "width": {
+          "@id": "schema:width",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "OptionalColor": {
+      "@id": "gdocs:OptionalColor",
+      "@context": {
+        "color": {
+          "@id": "gdocs:OptionalColor.color",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "Color": {
+      "@id": "gdocs:Color",
+      "@context": {
+        "rgbColor": {
+          "@id": "gdocs:Color.rgbColor",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "RgbColor": {
+      "@id": "gdocs:RgbColor",
+      "@context": {
+        "red": {
+          "@id": "gdocs:RgbColor.red",
+          "@type": "xsd:float"
+        },
+        "green": {
+          "@id": "gdocs:RgbColor.green",
+          "@type": "xsd:float"
+        },
+        "blue": {
+          "@id": "gdocs:RgbColor.blue",
+          "@type": "xsd:float"
+        }
+      }
+    },
+
+    "NamedRange": {
+      "@id": "gdocs:NamedRange",
+      "@context": {
+        "namedRangeId": {
+          "@id": "schema:identifier",
+          "@type": "xsd:string"
+        },
+        "name": {
+          "@id": "schema:name",
+          "@type": "xsd:string"
+        },
+        "ranges": {
+          "@id": "gdocs:NamedRange.ranges",
+          "@type": "@id",
+          "@container": "@list"
+        }
+      }
+    },
+
+    "Range": {
+      "@id": "gdocs:Range",
+      "@context": {
+        "segmentId": {
+          "@id": "gdocs:Range.segmentId",
+          "@type": "xsd:string"
+        },
+        "startIndex": {
+          "@id": "gdocs:Range.startIndex",
+          "@type": "xsd:integer"
+        },
+        "endIndex": {
+          "@id": "gdocs:Range.endIndex",
+          "@type": "xsd:integer"
+        },
+        "tabId": {
+          "@id": "gdocs:Range.tabId",
+          "@type": "xsd:string"
+        }
+      }
+    },
+
+    "List": {
+      "@id": "gdocs:List",
+      "@context": {
+        "listProperties": {
+          "@id": "gdocs:List.listProperties",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "Bullet": {
+      "@id": "gdocs:Bullet",
+      "@context": {
+        "listId": {
+          "@id": "gdocs:Bullet.listId",
+          "@type": "xsd:string"
+        },
+        "nestingLevel": {
+          "@id": "gdocs:Bullet.nestingLevel",
+          "@type": "xsd:integer"
+        },
+        "textStyle": {
+          "@id": "gdocs:Bullet.textStyle",
+          "@type": "@id"
+        }
+      }
+    },
+
+    "WeightedFontFamily": {
+      "@id": "gdocs:WeightedFontFamily",
+      "@context": {
+        "fontFamily": {
+          "@id": "gdocs:WeightedFontFamily.fontFamily",
+          "@type": "xsd:string"
+        },
+        "weight": {
+          "@id": "gdocs:WeightedFontFamily.weight",
+          "@type": "xsd:integer"
+        }
+      }
+    }
+  }
+}

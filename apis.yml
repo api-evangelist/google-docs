@@ -1,9 +1,12 @@
+aid: google-docs
 name: Google Docs API
 description: API for creating, reading, and editing Google Docs documents
 image: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
 url: https://developers.google.com/docs/api
 created: '2024-01-01'
-modified: '2026-03-03'
+modified: '2026-03-16'
+specificationVersion: '0.19'
+type: Index
 apis:
 - name: Google Docs API
   description: The Google Docs API lets you create and modify documents
@@ -82,12 +85,8 @@ common:
 - type: GitHubOrganization
   url: https://github.com/googleapis
 maintainers:
-- name: Kin Lane
+- FN: Kin Lane
   email: kin@apievangelist.com
-  url: https://apievangelist.com
-- name: Google
-  email: googleapis-packages@google.com
-  url: https://cloud.google.com
 tags:
 - documents
 - productivity

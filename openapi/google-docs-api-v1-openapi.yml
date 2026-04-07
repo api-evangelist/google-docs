@@ -31,7 +31,7 @@ paths:
   /v1/documents:
     post:
       operationId: docs.documents.create
-      summary: Create a document
+      summary: Google Docs Create a document
       description: >-
         Creates a blank document using the title given in the request. Other
         fields in the request, including any provided content, are ignored.
@@ -79,7 +79,7 @@ paths:
   /v1/documents/{documentId}:
     get:
       operationId: docs.documents.get
-      summary: Get a document
+      summary: Google Docs Get a document
       description: >-
         Gets the latest version of the specified document. Returns the full
         document resource including content, styling, and metadata.
@@ -151,7 +151,7 @@ paths:
   /v1/documents/{documentId}:batchUpdate:
     post:
       operationId: docs.documents.batchUpdate
-      summary: Batch update a document
+      summary: Google Docs Batch update a document
       description: >-
         Applies one or more updates to the document. Each request is validated
         before being applied. If any request is not valid, the entire request

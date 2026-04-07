@@ -2,8 +2,7 @@ aid: google-docs
 name: Google Docs
 description: >-
   API for creating, reading, and editing Google Docs documents.
-image: 
-  https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
+image: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
 url: https://developers.google.com/docs/api
 created: '2024-01-01'
 modified: '2026-03-16'
@@ -41,8 +40,7 @@ apis:
       - type: GettingStarted
         url: https://developers.google.com/workspace/docs/api/how-tos/overview
       - type: BestPractices
-        url: 
-          https://developers.google.com/workspace/docs/api/how-tos/best-practices
+        url: https://developers.google.com/workspace/docs/api/how-tos/best-practices
       - type: Authorization
         url: https://developers.google.com/workspace/docs/api/auth
       - type: ClientLibraries
@@ -62,16 +60,15 @@ apis:
       - type: QuickstartJavaScript
         url: https://developers.google.com/docs/api/quickstart/js
       - type: Console
-        url: 
-          https://console.cloud.google.com/marketplace/product/google/docs.googleapis.com
+        url: https://console.cloud.google.com/marketplace/product/google/docs.googleapis.com
       - type: Blog
         url: https://workspaceupdates.googleblog.com/
     tags:
-      - documents
-      - productivity
-      - collaboration
-      - word-processing
-      - google-workspace
+      - Collaboration
+      - Documents
+      - Google-Workspace
+      - Productivity
+      - Word-Processing
 common:
   - type: Portal
     url: https://developers.google.com/docs
@@ -93,9 +90,8 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 tags:
-  - documents
-  - productivity
-  - APIs
-  - google-workspace
-  - collaboration
-  - word-processing
+  - Collaboration
+  - Documents
+  - Google-Workspace
+  - Productivity
+  - Word-Processing

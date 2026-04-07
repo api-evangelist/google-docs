@@ -25,7 +25,7 @@ servers:
 security:
   - oauth2: []
 tags:
-  - name: documents
+  - name: Documents
     description: Operations on Google Docs documents
 paths:
   /v1/documents:
@@ -36,7 +36,7 @@ paths:
         Creates a blank document using the title given in the request. Other
         fields in the request, including any provided content, are ignored.
       tags:
-        - documents
+        - Documents
       requestBody:
         description: The document to create. Only the title field is used.
         required: true
@@ -84,7 +84,7 @@ paths:
         Gets the latest version of the specified document. Returns the full
         document resource including content, styling, and metadata.
       tags:
-        - documents
+        - Documents
       parameters:
         - name: documentId
           in: path
@@ -160,7 +160,7 @@ paths:
         do not need to return information; these each return an empty reply.
         The order of replies matches the order of requests.
       tags:
-        - documents
+        - Documents
       parameters:
         - name: documentId
           in: path

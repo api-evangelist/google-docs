@@ -1,0 +1,9 @@
+{
+  "headers": "example_value",
+  "footers": "example_value",
+  "footnotes": "example_value",
+  "lists": "example_value",
+  "namedRanges": "example_value",
+  "inlineObjects": "example_value",
+  "positionedObjects": "example_value"
+}

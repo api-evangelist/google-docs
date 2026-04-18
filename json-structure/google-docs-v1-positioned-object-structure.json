@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "PositionedObject",
+  "type": "object",
+  "properties": {
+    "objectId": {
+      "type": "string"
+    },
+    "suggestedPositionedObjectPropertiesChanges": {
+      "type": "object"
+    },
+    "suggestedInsertionId": {
+      "type": "string"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    }
+  }
+}

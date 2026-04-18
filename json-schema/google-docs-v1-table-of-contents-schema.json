@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TableOfContents",
+  "type": "object",
+  "description": "A StructuralElement representing a table of contents.",
+  "properties": {
+    "content": {
+      "type": "array",
+      "description": "The content of the table of contents."
+    },
+    "suggestedInsertionIds": {
+      "type": "array"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    }
+  }
+}

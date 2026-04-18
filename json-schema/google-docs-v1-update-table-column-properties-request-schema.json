@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UpdateTableColumnPropertiesRequest",
+  "type": "object",
+  "description": "Updates the properties of columns in a table.",
+  "properties": {
+    "columnIndices": {
+      "type": "array",
+      "description": "The list of zero-based column indices whose property should be updated."
+    },
+    "fields": {
+      "type": "string",
+      "description": "The fields that should be updated."
+    }
+  }
+}

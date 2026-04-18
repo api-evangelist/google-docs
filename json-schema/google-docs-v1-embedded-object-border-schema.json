@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EmbeddedObjectBorder",
+  "type": "object",
+  "description": "A border around an EmbeddedObject.",
+  "properties": {
+    "dashStyle": {
+      "type": "string"
+    },
+    "propertyState": {
+      "type": "string"
+    }
+  }
+}

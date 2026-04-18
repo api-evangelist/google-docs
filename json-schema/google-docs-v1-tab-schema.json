@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tab",
+  "type": "object",
+  "description": "A tab within a document. Tabs can contain content and can be nested with child tabs.",
+  "properties": {
+    "childTabs": {
+      "type": "array",
+      "description": "The child tabs nested within this tab."
+    }
+  }
+}

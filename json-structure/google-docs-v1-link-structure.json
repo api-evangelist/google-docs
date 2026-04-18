@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "Link",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "bookmarkId": {
+      "type": "string"
+    },
+    "headingId": {
+      "type": "string"
+    },
+    "tabId": {
+      "type": "string"
+    }
+  }
+}

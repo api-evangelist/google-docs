@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Request",
+  "type": "object",
+  "description": "A single update to apply to a document. Exactly one field must be set.",
+  "properties": {}
+}

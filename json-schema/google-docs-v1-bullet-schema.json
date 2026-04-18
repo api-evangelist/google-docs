@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bullet",
+  "type": "object",
+  "description": "Describes the bullet of a paragraph.",
+  "properties": {
+    "listId": {
+      "type": "string",
+      "description": "The ID of the list this paragraph belongs to."
+    },
+    "nestingLevel": {
+      "type": "integer",
+      "description": "The nesting level of this paragraph in the list."
+    }
+  }
+}

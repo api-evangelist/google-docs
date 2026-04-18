@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LinkedContentReference",
+  "type": "object",
+  "description": "A reference to the external linked source content.",
+  "properties": {}
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ParagraphElement",
+  "type": "object",
+  "description": "A ParagraphElement describes content within a paragraph.",
+  "properties": {
+    "startIndex": {
+      "type": "integer",
+      "description": "The zero-based start index of this paragraph element."
+    },
+    "endIndex": {
+      "type": "integer",
+      "description": "The zero-based end index of this paragraph element, exclusive."
+    }
+  }
+}

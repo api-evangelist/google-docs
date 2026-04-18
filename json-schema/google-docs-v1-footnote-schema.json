@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Footnote",
+  "type": "object",
+  "description": "A document footnote.",
+  "properties": {
+    "footnoteId": {
+      "type": "string",
+      "description": "Output only. The ID of the footnote."
+    },
+    "content": {
+      "type": "array",
+      "description": "The contents of the footnote."
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReplaceNamedRangeContentRequest",
+  "type": "object",
+  "description": "Replaces the content of the specified NamedRange.",
+  "properties": {
+    "namedRangeId": {
+      "type": "string",
+      "description": "The ID of the named range whose content will be replaced."
+    },
+    "namedRangeName": {
+      "type": "string",
+      "description": "The name of the named ranges whose content will be replaced."
+    },
+    "text": {
+      "type": "string",
+      "description": "Replaces the content of the specified named range with the given text."
+    }
+  }
+}

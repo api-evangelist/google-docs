@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NamedRange",
+  "type": "object",
+  "description": "A collection of Ranges that have the same named range ID.",
+  "properties": {
+    "namedRangeId": {
+      "type": "string",
+      "description": "The ID of the named range."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the named range."
+    },
+    "ranges": {
+      "type": "array",
+      "description": "The ranges that belong to this named range."
+    }
+  }
+}

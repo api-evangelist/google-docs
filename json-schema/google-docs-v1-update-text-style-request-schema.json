@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UpdateTextStyleRequest",
+  "type": "object",
+  "description": "Updates the styling of text in the document.",
+  "properties": {
+    "fields": {
+      "type": "string",
+      "description": "The fields that should be updated. At least one field must be specified. The root textStyle is implied and should not be specified. For example, to update the bold field, set fields to \"bold\"."
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DocumentStyle",
+  "type": "object",
+  "description": "The style of the document, influencing the look of the document and any defaults for new content.",
+  "properties": {
+    "defaultHeaderId": {
+      "type": "string",
+      "description": "The ID of the default header."
+    },
+    "defaultFooterId": {
+      "type": "string",
+      "description": "The ID of the default footer."
+    },
+    "evenPageHeaderId": {
+      "type": "string",
+      "description": "The ID of the header used for even pages."
+    },
+    "evenPageFooterId": {
+      "type": "string",
+      "description": "The ID of the footer used for even pages."
+    },
+    "firstPageHeaderId": {
+      "type": "string",
+      "description": "The ID of the header used for the first page."
+    },
+    "firstPageFooterId": {
+      "type": "string",
+      "description": "The ID of the footer used for the first page."
+    },
+    "useFirstPageHeaderFooter": {
+      "type": "boolean",
+      "description": "Whether to use the first page header/footer IDs for the first page of the document."
+    },
+    "useEvenPageHeaderFooter": {
+      "type": "boolean",
+      "description": "Whether to use the even page header/footer IDs for even pages."
+    },
+    "pageNumberStart": {
+      "type": "integer",
+      "description": "The page number from which to start counting the number of pages."
+    },
+    "useCustomHeaderFooterMargins": {
+      "type": "boolean",
+      "description": "Whether to use custom header/footer margins."
+    },
+    "flipPageOrientation": {
+      "type": "boolean",
+      "description": "Whether to flip the orientation of the page to landscape, which effectively swaps the width and height of the page size."
+    }
+  }
+}

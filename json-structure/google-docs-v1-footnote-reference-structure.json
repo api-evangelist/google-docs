@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "FootnoteReference",
+  "type": "object",
+  "properties": {
+    "footnoteId": {
+      "type": "string"
+    },
+    "footnoteNumber": {
+      "type": "string"
+    },
+    "suggestedInsertionIds": {
+      "type": "array"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    },
+    "suggestedTextStyleChanges": {
+      "type": "object"
+    }
+  }
+}

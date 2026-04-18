@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "ReplaceNamedRangeContentRequest",
+  "type": "object",
+  "properties": {
+    "namedRangeId": {
+      "type": "string"
+    },
+    "namedRangeName": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PinTableHeaderRowsRequest",
+  "type": "object",
+  "description": "Updates the number of pinned table header rows in a table.",
+  "properties": {
+    "pinnedHeaderRowsCount": {
+      "type": "integer",
+      "description": "The number of table rows to pin, where 0 implies that all rows are unpinned."
+    }
+  }
+}

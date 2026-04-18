@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeleteFooterRequest",
+  "type": "object",
+  "description": "Deletes a Footer from the document.",
+  "properties": {
+    "footerId": {
+      "type": "string",
+      "description": "The ID of the footer to delete."
+    },
+    "tabId": {
+      "type": "string",
+      "description": "The tab containing the footer to delete."
+    }
+  }
+}

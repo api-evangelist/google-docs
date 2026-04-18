@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PersonProperties",
+  "type": "object",
+  "description": "Properties specific to a linked person.",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Output only. The name of the person."
+    },
+    "email": {
+      "type": "string",
+      "description": "Output only. The email address linked to this person."
+    }
+  }
+}

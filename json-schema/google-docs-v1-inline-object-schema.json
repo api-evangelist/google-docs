@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "InlineObject",
+  "type": "object",
+  "description": "An object that appears inline with text. An InlineObject contains an EmbeddedObject such as an image.",
+  "properties": {
+    "objectId": {
+      "type": "string",
+      "description": "The ID of this inline object."
+    },
+    "suggestedInlineObjectPropertiesChanges": {
+      "type": "object"
+    },
+    "suggestedInsertionId": {
+      "type": "string"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    }
+  }
+}

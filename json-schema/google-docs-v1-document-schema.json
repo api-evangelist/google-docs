@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Document",
+  "type": "object",
+  "description": "A Google Docs document. The Document resource represents the full content and metadata of a document.",
+  "properties": {
+    "documentId": {
+      "type": "string",
+      "description": "Output only. The ID of the document."
+    },
+    "title": {
+      "type": "string",
+      "description": "The title of the document."
+    },
+    "tabs": {
+      "type": "array",
+      "description": "Tabs that are part of a document. Tabs can contain child tabs, creating a nested tab structure."
+    },
+    "revisionId": {
+      "type": "string",
+      "description": "Output only. The revision ID of the document. Can be used in update requests to specify which revision of a document to apply updates to, and how the request should behave if the document has been edited since that revision."
+    },
+    "headers": {
+      "type": "object",
+      "description": "Output only. The headers in the document, keyed by header ID."
+    },
+    "footers": {
+      "type": "object",
+      "description": "Output only. The footers in the document, keyed by footer ID."
+    },
+    "footnotes": {
+      "type": "object",
+      "description": "Output only. The footnotes in the document, keyed by footnote ID."
+    },
+    "suggestedDocumentStyleChanges": {
+      "type": "object",
+      "description": "Output only. The suggested changes to the style of the document, keyed by suggestion ID."
+    },
+    "suggestedNamedStylesChanges": {
+      "type": "object",
+      "description": "Output only. The suggested changes to the named styles of the document, keyed by suggestion ID."
+    },
+    "lists": {
+      "type": "object",
+      "description": "Output only. The lists in the document, keyed by list ID."
+    },
+    "namedRanges": {
+      "type": "object",
+      "description": "Output only. The named ranges in the document, keyed by name."
+    },
+    "inlineObjects": {
+      "type": "object",
+      "description": "Output only. The inline objects in the document, keyed by object ID."
+    },
+    "positionedObjects": {
+      "type": "object",
+      "description": "Output only. The positioned objects in the document, keyed by object ID."
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "Paragraph",
+  "type": "object",
+  "properties": {
+    "elements": {
+      "type": "array"
+    },
+    "suggestedParagraphStyleChanges": {
+      "type": "object"
+    },
+    "suggestedBulletChanges": {
+      "type": "object"
+    },
+    "positionedObjectIds": {
+      "type": "array"
+    }
+  }
+}

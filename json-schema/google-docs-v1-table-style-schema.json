@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TableStyle",
+  "type": "object",
+  "description": "Style properties for a table.",
+  "properties": {
+    "tableColumnProperties": {
+      "type": "array",
+      "description": "The properties of each column."
+    }
+  }
+}

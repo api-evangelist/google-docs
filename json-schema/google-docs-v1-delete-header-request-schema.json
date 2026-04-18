@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeleteHeaderRequest",
+  "type": "object",
+  "description": "Deletes a Header from the document.",
+  "properties": {
+    "headerId": {
+      "type": "string",
+      "description": "The ID of the header to delete."
+    },
+    "tabId": {
+      "type": "string",
+      "description": "The tab containing the header to delete."
+    }
+  }
+}

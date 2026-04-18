@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UpdateTableRowStyleRequest",
+  "type": "object",
+  "description": "Updates the style of a table row.",
+  "properties": {
+    "rowIndices": {
+      "type": "array",
+      "description": "The list of zero-based row indices whose style should be updated."
+    },
+    "fields": {
+      "type": "string",
+      "description": "The fields that should be updated."
+    }
+  }
+}

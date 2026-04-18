@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "InlineObjectElement",
+  "type": "object",
+  "properties": {
+    "inlineObjectId": {
+      "type": "string"
+    },
+    "suggestedInsertionIds": {
+      "type": "array"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    },
+    "suggestedTextStyleChanges": {
+      "type": "object"
+    }
+  }
+}

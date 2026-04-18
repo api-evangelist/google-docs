@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Person",
+  "type": "object",
+  "description": "A person or email address mentioned in a document.",
+  "properties": {
+    "personId": {
+      "type": "string",
+      "description": "Output only. The unique ID of this link."
+    },
+    "suggestedInsertionIds": {
+      "type": "array"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    },
+    "suggestedTextStyleChanges": {
+      "type": "object"
+    }
+  }
+}

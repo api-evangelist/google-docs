@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeleteNamedRangeRequest",
+  "type": "object",
+  "description": "Deletes a NamedRange.",
+  "properties": {
+    "namedRangeId": {
+      "type": "string",
+      "description": "The ID of the named range to delete."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the range to delete. All named ranges with the given name will be deleted."
+    }
+  }
+}

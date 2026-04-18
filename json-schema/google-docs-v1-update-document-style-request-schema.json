@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UpdateDocumentStyleRequest",
+  "type": "object",
+  "description": "Updates the DocumentStyle.",
+  "properties": {
+    "fields": {
+      "type": "string",
+      "description": "The fields that should be updated."
+    },
+    "tabId": {
+      "type": "string",
+      "description": "The tab that contains the style to update."
+    }
+  }
+}

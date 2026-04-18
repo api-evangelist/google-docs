@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PageBreak",
+  "type": "object",
+  "description": "A ParagraphElement representing a page break. A page break makes the subsequent text start at the top of the next page.",
+  "properties": {
+    "suggestedInsertionIds": {
+      "type": "array"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    },
+    "suggestedTextStyleChanges": {
+      "type": "object"
+    }
+  }
+}

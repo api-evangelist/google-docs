@@ -1,0 +1,8 @@
+{
+  "bold": true,
+  "italic": true,
+  "underline": true,
+  "strikethrough": true,
+  "smallCaps": true,
+  "baselineOffset": "example_value"
+}

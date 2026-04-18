@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TableRow",
+  "type": "object",
+  "description": "The contents and style of a row in a table.",
+  "properties": {
+    "startIndex": {
+      "type": "integer",
+      "description": "The zero-based start index of this row."
+    },
+    "endIndex": {
+      "type": "integer",
+      "description": "The zero-based end index of this row, exclusive."
+    },
+    "tableCells": {
+      "type": "array",
+      "description": "The contents and style of each cell in this row."
+    },
+    "suggestedInsertionIds": {
+      "type": "array"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    },
+    "suggestedTableRowStyleChanges": {
+      "type": "object"
+    }
+  }
+}

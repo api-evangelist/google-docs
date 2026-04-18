@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AutoText",
+  "type": "object",
+  "description": "A ParagraphElement representing a spot in the text that is dynamically replaced with content that can change over time, like a page number.",
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "The type of this auto text."
+    },
+    "suggestedInsertionIds": {
+      "type": "array"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    },
+    "suggestedTextStyleChanges": {
+      "type": "object"
+    }
+  }
+}

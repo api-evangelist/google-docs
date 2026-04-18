@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "UpdateDocumentStyleRequest",
+  "type": "object",
+  "properties": {
+    "fields": {
+      "type": "string"
+    },
+    "tabId": {
+      "type": "string"
+    }
+  }
+}

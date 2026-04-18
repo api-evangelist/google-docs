@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "TableCell",
+  "type": "object",
+  "properties": {
+    "startIndex": {
+      "type": "integer"
+    },
+    "endIndex": {
+      "type": "integer"
+    },
+    "content": {
+      "type": "array"
+    },
+    "suggestedInsertionIds": {
+      "type": "array"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    },
+    "suggestedTableCellStyleChanges": {
+      "type": "object"
+    }
+  }
+}

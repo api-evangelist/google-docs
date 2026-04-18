@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TabStop",
+  "type": "object",
+  "description": "A tab stop within a paragraph.",
+  "properties": {
+    "alignment": {
+      "type": "string",
+      "description": "The alignment of this tab stop."
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeletePositionedObjectRequest",
+  "type": "object",
+  "description": "Deletes a PositionedObject from the document.",
+  "properties": {
+    "objectId": {
+      "type": "string",
+      "description": "The ID of the positioned object to delete."
+    },
+    "tabId": {
+      "type": "string",
+      "description": "The tab that the positioned object is in."
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UpdateTableCellStyleRequest",
+  "type": "object",
+  "description": "Updates the style of a range of table cells.",
+  "properties": {
+    "fields": {
+      "type": "string",
+      "description": "The fields that should be updated."
+    }
+  }
+}

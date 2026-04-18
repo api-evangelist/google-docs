@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UpdateParagraphStyleRequest",
+  "type": "object",
+  "description": "Updates the styling of paragraphs in the document.",
+  "properties": {
+    "fields": {
+      "type": "string",
+      "description": "The fields that should be updated. At least one field must be specified."
+    }
+  }
+}

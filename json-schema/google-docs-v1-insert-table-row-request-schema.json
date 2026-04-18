@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "InsertTableRowRequest",
+  "type": "object",
+  "description": "Inserts an empty row into a table.",
+  "properties": {
+    "insertBelow": {
+      "type": "boolean",
+      "description": "Whether to insert new row below the reference cell location."
+    }
+  }
+}

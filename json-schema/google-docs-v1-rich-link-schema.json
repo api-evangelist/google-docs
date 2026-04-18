@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RichLink",
+  "type": "object",
+  "description": "A link to a Google resource such as a file in Drive, a YouTube video, or a Calendar event.",
+  "properties": {
+    "richLinkId": {
+      "type": "string",
+      "description": "Output only. The ID of this link."
+    },
+    "suggestedInsertionIds": {
+      "type": "array"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    },
+    "suggestedTextStyleChanges": {
+      "type": "object"
+    }
+  }
+}

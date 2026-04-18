@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "CreateDocumentRequest",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

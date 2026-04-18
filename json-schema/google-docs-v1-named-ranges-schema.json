@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NamedRanges",
+  "type": "object",
+  "description": "A collection of all the NamedRanges in the document that share a given name.",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name that all the named ranges share."
+    },
+    "namedRanges": {
+      "type": "array",
+      "description": "The named ranges that share the same name."
+    }
+  }
+}

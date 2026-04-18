@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ParagraphStyle",
+  "type": "object",
+  "description": "Styles that apply to a whole paragraph. Inherited paragraph styles are represented as unset fields.",
+  "properties": {
+    "headingId": {
+      "type": "string",
+      "description": "The heading ID of the paragraph."
+    },
+    "namedStyleType": {
+      "type": "string",
+      "description": "The named style type of the paragraph."
+    },
+    "alignment": {
+      "type": "string",
+      "description": "The text alignment for this paragraph."
+    },
+    "lineSpacing": {
+      "type": "number",
+      "description": "The amount of space between lines as a percentage of normal, where normal is represented as 100.0."
+    },
+    "direction": {
+      "type": "string",
+      "description": "The text direction of this paragraph."
+    },
+    "spacingMode": {
+      "type": "string",
+      "description": "The spacing mode for the paragraph."
+    },
+    "tabStops": {
+      "type": "array",
+      "description": "A list of the tab stops for this paragraph, sorted in ascending order of the tab stop offset."
+    },
+    "keepLinesTogether": {
+      "type": "boolean",
+      "description": "Whether all lines of the paragraph should be laid out on the same page or column if possible."
+    },
+    "keepWithNext": {
+      "type": "boolean",
+      "description": "Whether at least a part of this paragraph should be laid out on the same page or column as the next paragraph if possible."
+    },
+    "avoidWidowAndOrphan": {
+      "type": "boolean",
+      "description": "Whether to avoid widows and orphans for the paragraph."
+    },
+    "pageBreakBefore": {
+      "type": "boolean",
+      "description": "Whether the current paragraph should always start at the beginning of a page."
+    }
+  }
+}

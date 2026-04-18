@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "InsertInlineImageResponse",
+  "type": "object",
+  "description": "The result of inserting an inline image.",
+  "properties": {
+    "objectId": {
+      "type": "string",
+      "description": "The ID of the created InlineObject."
+    }
+  }
+}

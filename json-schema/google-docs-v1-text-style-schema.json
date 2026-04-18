@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TextStyle",
+  "type": "object",
+  "description": "Represents the styling that can be applied to text. Inherited text styles are represented as unset fields. A text style's parent depends on where the text style is defined.",
+  "properties": {
+    "bold": {
+      "type": "boolean",
+      "description": "Whether the text is bold."
+    },
+    "italic": {
+      "type": "boolean",
+      "description": "Whether the text is italicized."
+    },
+    "underline": {
+      "type": "boolean",
+      "description": "Whether the text is underlined."
+    },
+    "strikethrough": {
+      "type": "boolean",
+      "description": "Whether the text is struck through."
+    },
+    "smallCaps": {
+      "type": "boolean",
+      "description": "Whether the text is in small capital letters."
+    },
+    "baselineOffset": {
+      "type": "string",
+      "description": "The text's vertical offset from its normal position."
+    }
+  }
+}

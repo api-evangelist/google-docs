@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Range",
+  "type": "object",
+  "description": "Specifies a contiguous range of text.",
+  "properties": {
+    "segmentId": {
+      "type": "string",
+      "description": "The ID of the header, footer, or footnote that this range is contained in. An empty segment ID signifies the document body."
+    },
+    "startIndex": {
+      "type": "integer",
+      "description": "The zero-based start index of this range, in UTF-16 code units."
+    },
+    "endIndex": {
+      "type": "integer",
+      "description": "The zero-based end index of this range, exclusive, in UTF-16 code units."
+    },
+    "tabId": {
+      "type": "string",
+      "description": "The tab that contains this range."
+    }
+  }
+}

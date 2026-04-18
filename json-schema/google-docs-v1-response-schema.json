@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Response",
+  "type": "object",
+  "description": "A single response from an update. The result of applying each request in a batch update.",
+  "properties": {}
+}

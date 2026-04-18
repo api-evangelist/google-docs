@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "InsertTableRequest",
+  "type": "object",
+  "description": "Inserts a table at the specified location.",
+  "properties": {
+    "rows": {
+      "type": "integer",
+      "description": "The number of rows in the table."
+    },
+    "columns": {
+      "type": "integer",
+      "description": "The number of columns in the table."
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "columnProperties": [],
+  "columnSeparatorStyle": "example_value",
+  "contentDirection": "example_value",
+  "sectionType": "example_value",
+  "defaultHeaderId": "500123",
+  "defaultFooterId": "500123",
+  "evenPageHeaderId": "500123",
+  "evenPageFooterId": "500123",
+  "firstPageHeaderId": "500123",
+  "firstPageFooterId": "500123",
+  "useFirstPageHeaderFooter": true,
+  "pageNumberStart": 10,
+  "flipPageOrientation": true
+}

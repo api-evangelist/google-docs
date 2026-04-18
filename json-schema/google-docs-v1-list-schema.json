@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "List",
+  "type": "object",
+  "description": "A List represents the list attributes for a group of paragraphs that all belong to the same list.",
+  "properties": {
+    "suggestedListPropertiesChanges": {
+      "type": "object"
+    },
+    "suggestedInsertionId": {
+      "type": "string"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    }
+  }
+}

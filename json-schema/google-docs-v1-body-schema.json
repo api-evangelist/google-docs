@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Body",
+  "type": "object",
+  "description": "The document body. The body typically contains the full content of the document.",
+  "properties": {
+    "content": {
+      "type": "array",
+      "description": "The contents of the body. Elements in the body are ordered by their start index."
+    }
+  }
+}

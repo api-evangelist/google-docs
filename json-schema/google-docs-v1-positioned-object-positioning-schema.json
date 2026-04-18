@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PositionedObjectPositioning",
+  "type": "object",
+  "description": "The positioning of a PositionedObject.",
+  "properties": {
+    "layout": {
+      "type": "string",
+      "description": "The layout of this positioned object."
+    }
+  }
+}

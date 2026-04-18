@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TableCell",
+  "type": "object",
+  "description": "The contents and style of a cell in a table.",
+  "properties": {
+    "startIndex": {
+      "type": "integer"
+    },
+    "endIndex": {
+      "type": "integer"
+    },
+    "content": {
+      "type": "array",
+      "description": "The content of the cell."
+    },
+    "suggestedInsertionIds": {
+      "type": "array"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    },
+    "suggestedTableCellStyleChanges": {
+      "type": "object"
+    }
+  }
+}

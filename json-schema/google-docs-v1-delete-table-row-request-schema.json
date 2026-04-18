@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeleteTableRowRequest",
+  "type": "object",
+  "description": "Deletes a row from a table.",
+  "properties": {}
+}

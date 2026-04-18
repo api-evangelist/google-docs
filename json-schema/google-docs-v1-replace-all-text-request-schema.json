@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReplaceAllTextRequest",
+  "type": "object",
+  "description": "Replaces all instances of text matching a criteria with replace text.",
+  "properties": {
+    "replaceText": {
+      "type": "string",
+      "description": "The text that will replace the matched text."
+    }
+  }
+}

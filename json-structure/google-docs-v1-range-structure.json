@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "Range",
+  "type": "object",
+  "properties": {
+    "segmentId": {
+      "type": "string"
+    },
+    "startIndex": {
+      "type": "integer"
+    },
+    "endIndex": {
+      "type": "integer"
+    },
+    "tabId": {
+      "type": "string"
+    }
+  }
+}

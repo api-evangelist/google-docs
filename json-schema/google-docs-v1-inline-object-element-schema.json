@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "InlineObjectElement",
+  "type": "object",
+  "description": "A ParagraphElement that contains an InlineObject.",
+  "properties": {
+    "inlineObjectId": {
+      "type": "string",
+      "description": "The ID of the InlineObject this element contains."
+    },
+    "suggestedInsertionIds": {
+      "type": "array"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    },
+    "suggestedTextStyleChanges": {
+      "type": "object"
+    }
+  }
+}

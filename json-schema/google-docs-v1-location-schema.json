@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Location",
+  "type": "object",
+  "description": "A particular location in the document.",
+  "properties": {
+    "segmentId": {
+      "type": "string",
+      "description": "The ID of the header, footer, or footnote the location is in. An empty segment ID signifies the document body."
+    },
+    "index": {
+      "type": "integer",
+      "description": "The zero-based index, in UTF-16 code units. The index is relative to the beginning of the segment specified by segmentId."
+    },
+    "tabId": {
+      "type": "string",
+      "description": "The tab that the location is in."
+    }
+  }
+}

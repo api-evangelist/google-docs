@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "InsertSectionBreakRequest",
+  "type": "object",
+  "description": "Inserts a section break at the given location.",
+  "properties": {
+    "sectionType": {
+      "type": "string",
+      "description": "The type of section to insert."
+    }
+  }
+}

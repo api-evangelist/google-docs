@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FootnoteReference",
+  "type": "object",
+  "description": "A ParagraphElement representing a footnote reference.",
+  "properties": {
+    "footnoteId": {
+      "type": "string",
+      "description": "The ID of the footnote that contains the content of this footnote reference."
+    },
+    "footnoteNumber": {
+      "type": "string",
+      "description": "Output only. The rendered number of this footnote."
+    },
+    "suggestedInsertionIds": {
+      "type": "array"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    },
+    "suggestedTextStyleChanges": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EmbeddedObject",
+  "type": "object",
+  "description": "An embedded object such as an image.",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the embedded object."
+    },
+    "description": {
+      "type": "string",
+      "description": "The description of the embedded object."
+    },
+    "embeddedDrawingProperties": {
+      "type": "object",
+      "description": "Properties of an embedded drawing. Currently empty."
+    }
+  }
+}

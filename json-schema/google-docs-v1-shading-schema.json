@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shading",
+  "type": "object",
+  "description": "The shading of a paragraph.",
+  "properties": {}
+}

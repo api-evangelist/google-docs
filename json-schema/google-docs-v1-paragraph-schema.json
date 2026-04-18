@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Paragraph",
+  "type": "object",
+  "description": "A StructuralElement representing a paragraph. A paragraph is a range of content that is terminated with a newline character.",
+  "properties": {
+    "elements": {
+      "type": "array",
+      "description": "The content of the paragraph, broken into its component parts."
+    },
+    "suggestedParagraphStyleChanges": {
+      "type": "object",
+      "description": "Suggested changes to the paragraph style, keyed by suggestion ID."
+    },
+    "suggestedBulletChanges": {
+      "type": "object",
+      "description": "Suggested changes to the bullet, keyed by suggestion ID."
+    },
+    "positionedObjectIds": {
+      "type": "array",
+      "description": "The IDs of the positioned objects tethered to this paragraph."
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ImageProperties",
+  "type": "object",
+  "description": "The properties of an image.",
+  "properties": {
+    "contentUri": {
+      "type": "string",
+      "description": "A URI to the image with a default lifetime of 30 minutes."
+    },
+    "sourceUri": {
+      "type": "string",
+      "description": "The source URI of the image."
+    },
+    "brightness": {
+      "type": "number",
+      "description": "The brightness effect of the image, from -1.0 to 1.0."
+    },
+    "contrast": {
+      "type": "number",
+      "description": "The contrast effect of the image, from -1.0 to 1.0."
+    },
+    "transparency": {
+      "type": "number",
+      "description": "The transparency effect of the image, from 0.0 to 1.0."
+    },
+    "angle": {
+      "type": "number",
+      "description": "The clockwise rotation angle of the image, in radians."
+    }
+  }
+}

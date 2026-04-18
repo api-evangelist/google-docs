@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DocumentTab",
+  "type": "object",
+  "description": "The content of a tab in a document, containing the body and associated document-level properties.",
+  "properties": {
+    "headers": {
+      "type": "object",
+      "description": "The headers in this tab, keyed by header ID."
+    },
+    "footers": {
+      "type": "object",
+      "description": "The footers in this tab, keyed by footer ID."
+    },
+    "footnotes": {
+      "type": "object",
+      "description": "The footnotes in this tab, keyed by footnote ID."
+    },
+    "lists": {
+      "type": "object",
+      "description": "The lists in this tab, keyed by list ID."
+    },
+    "namedRanges": {
+      "type": "object",
+      "description": "The named ranges in this tab, keyed by name."
+    },
+    "inlineObjects": {
+      "type": "object",
+      "description": "The inline objects in this tab, keyed by object ID."
+    },
+    "positionedObjects": {
+      "type": "object",
+      "description": "The positioned objects in this tab, keyed by object ID."
+    }
+  }
+}

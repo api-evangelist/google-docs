@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SectionStyle",
+  "type": "object",
+  "description": "The style of a section, influencing the layout of the section's content.",
+  "properties": {
+    "columnProperties": {
+      "type": "array",
+      "description": "The section's columns properties. If empty, the section contains one column with the default properties."
+    },
+    "columnSeparatorStyle": {
+      "type": "string",
+      "description": "The style of column separators."
+    },
+    "contentDirection": {
+      "type": "string",
+      "description": "The content direction of this section."
+    },
+    "sectionType": {
+      "type": "string",
+      "description": "The type of section."
+    },
+    "defaultHeaderId": {
+      "type": "string"
+    },
+    "defaultFooterId": {
+      "type": "string"
+    },
+    "evenPageHeaderId": {
+      "type": "string"
+    },
+    "evenPageFooterId": {
+      "type": "string"
+    },
+    "firstPageHeaderId": {
+      "type": "string"
+    },
+    "firstPageFooterId": {
+      "type": "string"
+    },
+    "useFirstPageHeaderFooter": {
+      "type": "boolean"
+    },
+    "pageNumberStart": {
+      "type": "integer"
+    },
+    "flipPageOrientation": {
+      "type": "boolean"
+    }
+  }
+}

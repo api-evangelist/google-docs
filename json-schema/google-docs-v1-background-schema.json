@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Background",
+  "type": "object",
+  "description": "Represents the background of a document.",
+  "properties": {}
+}

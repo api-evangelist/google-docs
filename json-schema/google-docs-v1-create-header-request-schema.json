@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CreateHeaderRequest",
+  "type": "object",
+  "description": "Creates a Header.",
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "The type of header to create."
+    }
+  }
+}

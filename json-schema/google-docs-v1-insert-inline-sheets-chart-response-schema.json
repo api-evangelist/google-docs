@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "InsertInlineSheetsChartResponse",
+  "type": "object",
+  "description": "The result of inserting an inline Sheets chart.",
+  "properties": {
+    "objectId": {
+      "type": "string",
+      "description": "The object ID of the created chart."
+    }
+  }
+}

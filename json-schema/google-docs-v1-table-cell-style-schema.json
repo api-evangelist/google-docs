@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TableCellStyle",
+  "type": "object",
+  "description": "The style of a table cell.",
+  "properties": {
+    "rowSpan": {
+      "type": "integer",
+      "description": "The row span of the cell."
+    },
+    "columnSpan": {
+      "type": "integer",
+      "description": "The column span of the cell."
+    },
+    "contentAlignment": {
+      "type": "string",
+      "description": "The alignment of the content in the table cell."
+    }
+  }
+}

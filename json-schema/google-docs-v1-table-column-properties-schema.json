@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TableColumnProperties",
+  "type": "object",
+  "description": "The properties of a column in a table.",
+  "properties": {
+    "widthType": {
+      "type": "string",
+      "description": "The width type of the column."
+    }
+  }
+}

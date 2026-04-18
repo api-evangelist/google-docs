@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "InsertTableRequest",
+  "type": "object",
+  "properties": {
+    "rows": {
+      "type": "integer"
+    },
+    "columns": {
+      "type": "integer"
+    }
+  }
+}

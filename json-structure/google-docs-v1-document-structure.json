@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "Document",
+  "type": "object",
+  "properties": {
+    "documentId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "tabs": {
+      "type": "array"
+    },
+    "revisionId": {
+      "type": "string"
+    },
+    "headers": {
+      "type": "object"
+    },
+    "footers": {
+      "type": "object"
+    },
+    "footnotes": {
+      "type": "object"
+    },
+    "suggestedDocumentStyleChanges": {
+      "type": "object"
+    },
+    "suggestedNamedStylesChanges": {
+      "type": "object"
+    },
+    "lists": {
+      "type": "object"
+    },
+    "namedRanges": {
+      "type": "object"
+    },
+    "inlineObjects": {
+      "type": "object"
+    },
+    "positionedObjects": {
+      "type": "object"
+    }
+  }
+}

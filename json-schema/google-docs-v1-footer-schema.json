@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Footer",
+  "type": "object",
+  "description": "A document footer.",
+  "properties": {
+    "footerId": {
+      "type": "string",
+      "description": "Output only. The ID of the footer."
+    },
+    "content": {
+      "type": "array",
+      "description": "The contents of the footer."
+    }
+  }
+}

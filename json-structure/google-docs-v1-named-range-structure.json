@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "NamedRange",
+  "type": "object",
+  "properties": {
+    "namedRangeId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "ranges": {
+      "type": "array"
+    }
+  }
+}

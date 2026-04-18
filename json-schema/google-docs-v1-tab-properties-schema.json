@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TabProperties",
+  "type": "object",
+  "description": "Properties of a tab.",
+  "properties": {
+    "tabId": {
+      "type": "string",
+      "description": "Output only. The ID of the tab."
+    },
+    "title": {
+      "type": "string",
+      "description": "The title of the tab."
+    },
+    "parentTabId": {
+      "type": "string",
+      "description": "Output only. The ID of the parent tab. Empty if this is a root-level tab."
+    },
+    "index": {
+      "type": "integer",
+      "description": "The zero-based index of the tab amongst its siblings."
+    }
+  }
+}

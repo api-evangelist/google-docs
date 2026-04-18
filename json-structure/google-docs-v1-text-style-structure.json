@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "TextStyle",
+  "type": "object",
+  "properties": {
+    "bold": {
+      "type": "boolean"
+    },
+    "italic": {
+      "type": "boolean"
+    },
+    "underline": {
+      "type": "boolean"
+    },
+    "strikethrough": {
+      "type": "boolean"
+    },
+    "smallCaps": {
+      "type": "boolean"
+    },
+    "baselineOffset": {
+      "type": "string"
+    }
+  }
+}

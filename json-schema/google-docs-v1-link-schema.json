@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Link",
+  "type": "object",
+  "description": "A reference to another portion of a document or an external URL.",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "An external URI."
+    },
+    "bookmarkId": {
+      "type": "string",
+      "description": "The ID of a bookmark in this document."
+    },
+    "headingId": {
+      "type": "string",
+      "description": "The ID of a heading in this document."
+    },
+    "tabId": {
+      "type": "string",
+      "description": "The ID of a tab in this document."
+    }
+  }
+}

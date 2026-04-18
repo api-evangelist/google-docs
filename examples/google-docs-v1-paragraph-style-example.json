@@ -1,0 +1,13 @@
+{
+  "headingId": "500123",
+  "namedStyleType": "example_value",
+  "alignment": "example_value",
+  "lineSpacing": 42.5,
+  "direction": "example_value",
+  "spacingMode": "example_value",
+  "tabStops": [],
+  "keepLinesTogether": true,
+  "keepWithNext": true,
+  "avoidWidowAndOrphan": true,
+  "pageBreakBefore": true
+}

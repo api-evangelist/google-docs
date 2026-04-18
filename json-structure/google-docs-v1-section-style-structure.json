@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "SectionStyle",
+  "type": "object",
+  "properties": {
+    "columnProperties": {
+      "type": "array"
+    },
+    "columnSeparatorStyle": {
+      "type": "string"
+    },
+    "contentDirection": {
+      "type": "string"
+    },
+    "sectionType": {
+      "type": "string"
+    },
+    "defaultHeaderId": {
+      "type": "string"
+    },
+    "defaultFooterId": {
+      "type": "string"
+    },
+    "evenPageHeaderId": {
+      "type": "string"
+    },
+    "evenPageFooterId": {
+      "type": "string"
+    },
+    "firstPageHeaderId": {
+      "type": "string"
+    },
+    "firstPageFooterId": {
+      "type": "string"
+    },
+    "useFirstPageHeaderFooter": {
+      "type": "boolean"
+    },
+    "pageNumberStart": {
+      "type": "integer"
+    },
+    "flipPageOrientation": {
+      "type": "boolean"
+    }
+  }
+}

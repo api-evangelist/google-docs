@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NamedStyles",
+  "type": "object",
+  "description": "The named styles defined in the document. Paragraphs in the document can inherit their text and paragraph styles from these named styles.",
+  "properties": {
+    "styles": {
+      "type": "array",
+      "description": "The named styles."
+    }
+  }
+}

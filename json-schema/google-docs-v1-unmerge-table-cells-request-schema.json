@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UnmergeTableCellsRequest",
+  "type": "object",
+  "description": "Unmerges cells in a table.",
+  "properties": {}
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CreateFooterRequest",
+  "type": "object",
+  "description": "Creates a Footer.",
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "The type of footer to create."
+    }
+  }
+}

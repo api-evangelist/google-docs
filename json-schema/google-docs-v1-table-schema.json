@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Table",
+  "type": "object",
+  "description": "A StructuralElement representing a table.",
+  "properties": {
+    "rows": {
+      "type": "integer",
+      "description": "Number of rows in the table."
+    },
+    "columns": {
+      "type": "integer",
+      "description": "Number of columns in the table."
+    },
+    "tableRows": {
+      "type": "array",
+      "description": "The contents and style of each row."
+    },
+    "suggestedInsertionIds": {
+      "type": "array"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    }
+  }
+}

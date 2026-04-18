@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WriteControl",
+  "type": "object",
+  "description": "Provides control over how write requests are executed. When set on a request, it provides a way to detect conflicts.",
+  "properties": {
+    "requiredRevisionId": {
+      "type": "string",
+      "description": "The optional revision ID of the document the write request is applied to. If this is not the latest revision of the document, the request is not processed and returns a 400 bad request error."
+    },
+    "targetRevisionId": {
+      "type": "string",
+      "description": "The optional target revision ID of the document the write request is applied to. If collaborator changes have occurred after the document was read using the API, the changes produced by this write request are applied against the collaborator changes. This results in a resolved document."
+    }
+  }
+}

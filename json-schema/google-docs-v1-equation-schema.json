@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Equation",
+  "type": "object",
+  "description": "A ParagraphElement representing an equation.",
+  "properties": {
+    "suggestedInsertionIds": {
+      "type": "array"
+    },
+    "suggestedDeletionIds": {
+      "type": "array"
+    }
+  }
+}

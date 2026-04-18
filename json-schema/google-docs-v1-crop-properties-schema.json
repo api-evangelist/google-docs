@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CropProperties",
+  "type": "object",
+  "description": "The crop properties of an image.",
+  "properties": {
+    "offsetLeft": {
+      "type": "number",
+      "description": "The offset from the left edge, as a fraction of the image width."
+    },
+    "offsetRight": {
+      "type": "number",
+      "description": "The offset from the right edge, as a fraction of the image width."
+    },
+    "offsetTop": {
+      "type": "number",
+      "description": "The offset from the top edge, as a fraction of the image height."
+    },
+    "offsetBottom": {
+      "type": "number",
+      "description": "The offset from the bottom edge, as a fraction of the image height."
+    },
+    "angle": {
+      "type": "number",
+      "description": "The clockwise rotation angle of the crop rectangle."
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CreateFootnoteRequest",
+  "type": "object",
+  "description": "Creates a Footnote segment and inserts a new FootnoteReference.",
+  "properties": {}
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NestingLevel",
+  "type": "object",
+  "description": "Contains properties describing the look and feel of a list bullet at a given level of nesting.",
+  "properties": {
+    "bulletAlignment": {
+      "type": "string",
+      "description": "The alignment of the bullet within the space allotted for rendering."
+    },
+    "glyphFormat": {
+      "type": "string",
+      "description": "The format string used by bullets at this level of nesting."
+    },
+    "startNumber": {
+      "type": "integer",
+      "description": "The number of the first list item at this nesting level."
+    },
+    "glyphType": {
+      "type": "string",
+      "description": "The type of glyph used by bullets at this nesting level."
+    },
+    "glyphSymbol": {
+      "type": "string",
+      "description": "A custom glyph symbol used by bullets at this nesting level."
+    }
+  }
+}

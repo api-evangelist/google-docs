@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "DocumentStyle",
+  "type": "object",
+  "properties": {
+    "defaultHeaderId": {
+      "type": "string"
+    },
+    "defaultFooterId": {
+      "type": "string"
+    },
+    "evenPageHeaderId": {
+      "type": "string"
+    },
+    "evenPageFooterId": {
+      "type": "string"
+    },
+    "firstPageHeaderId": {
+      "type": "string"
+    },
+    "firstPageFooterId": {
+      "type": "string"
+    },
+    "useFirstPageHeaderFooter": {
+      "type": "boolean"
+    },
+    "useEvenPageHeaderFooter": {
+      "type": "boolean"
+    },
+    "pageNumberStart": {
+      "type": "integer"
+    },
+    "useCustomHeaderFooterMargins": {
+      "type": "boolean"
+    },
+    "flipPageOrientation": {
+      "type": "boolean"
+    }
+  }
+}

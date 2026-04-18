@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReplaceImageRequest",
+  "type": "object",
+  "description": "Replaces an existing image with a new image. Replacing an image removes some image effects from the existing image in order to mirror the behavior of the Docs editor.",
+  "properties": {
+    "imageObjectId": {
+      "type": "string",
+      "description": "The ID of the existing image that will be replaced."
+    },
+    "uri": {
+      "type": "string",
+      "description": "The URI of the new image. The image is fetched once at insertion time and a copy is stored for display inside the document."
+    },
+    "imageReplaceMethod": {
+      "type": "string",
+      "description": "The replacement method."
+    },
+    "tabId": {
+      "type": "string",
+      "description": "The tab that the image to be replaced is in."
+    }
+  }
+}

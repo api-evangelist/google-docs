@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ListProperties",
+  "type": "object",
+  "description": "The properties of a list which describe the look and feel of bullets.",
+  "properties": {
+    "nestingLevels": {
+      "type": "array",
+      "description": "Describes the properties of the bullets at the associated level. A list has at most 9 levels of nesting."
+    }
+  }
+}

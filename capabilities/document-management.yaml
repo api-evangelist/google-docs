@@ -1,0 +1,102 @@
+naftiko: "1.0.0-alpha1"
+
+info:
+  label: "Google Docs Document Management"
+  description: "Unified workflow for creating, reading, and editing Google Docs documents including content manipulation, formatting, and template automation. Used by developers automating document workflows."
+  tags:
+    - Google Docs
+    - Document Management
+    - Google Workspace
+    - Automation
+  created: "2026-04-18"
+  modified: "2026-04-18"
+
+binds:
+  - namespace: env
+    keys:
+      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN
+
+capability:
+  consumes:
+    - import: docs-api
+      location: ./shared/docs-api.yaml
+
+  exposes:
+    - type: rest
+      port: 8080
+      namespace: docs-management-api
+      description: "Unified REST API for Google Docs document management."
+      resources:
+        - path: /v1/documents
+          name: documents
+          description: "Document creation."
+          operations:
+            - method: POST
+              name: create-document
+              description: "Create a new document."
+              call: "docs-api.create-document"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+        - path: /v1/documents/{id}
+          name: document-details
+          description: "Document retrieval and updates."
+          operations:
+            - method: GET
+              name: get-document
+              description: "Get a document by ID."
+              call: "docs-api.get-document"
+              with:
+                documentId: "rest.id"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+        - path: /v1/documents/{id}/batch-update
+          name: document-updates
+          description: "Document batch updates."
+          operations:
+            - method: POST
+              name: batch-update-document
+              description: "Apply batch updates to a document."
+              call: "docs-api.batch-update-document"
+              with:
+                documentId: "rest.id"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+
+    - type: mcp
+      port: 9090
+      namespace: docs-management-mcp
+      transport: http
+      description: "MCP server for AI-assisted Google Docs document management."
+      tools:
+        - name: create-document
+          description: "Create a new Google Docs document with a title."
+          hints:
+            readOnly: false
+          call: "docs-api.create-document"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: get-document
+          description: "Retrieve a Google Docs document by its ID."
+          hints:
+            readOnly: true
+            idempotent: true
+          call: "docs-api.get-document"
+          with:
+            documentId: "tools.documentId"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: batch-update-document
+          description: "Apply batch updates to insert, replace, or delete content in a document."
+          hints:
+            readOnly: false
+          call: "docs-api.batch-update-document"
+          with:
+            documentId: "tools.documentId"
+          outputParameters:
+            - type: object
+              mapping: "$."

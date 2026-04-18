@@ -1,0 +1,8 @@
+name: google-docs API Vocabulary
+provider: google-docs
+created: '2026-04-18'
+modified: '2026-04-18'
+operations: 3
+schemas: 123
+tags:
+- Documents

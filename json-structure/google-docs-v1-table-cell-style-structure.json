@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "TableCellStyle",
+  "type": "object",
+  "properties": {
+    "rowSpan": {
+      "type": "integer"
+    },
+    "columnSpan": {
+      "type": "integer"
+    },
+    "contentAlignment": {
+      "type": "string"
+    }
+  }
+}

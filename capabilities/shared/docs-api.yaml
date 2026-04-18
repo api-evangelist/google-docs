@@ -1,0 +1,152 @@
+naftiko: "1.0.0-alpha1"
+
+info:
+  label: "Google Docs API"
+  description: "Google Docs API for creating, reading, and editing Google Docs documents programmatically."
+  tags:
+    - Google Docs
+    - Documents
+    - Google Workspace
+  created: "2026-04-18"
+  modified: "2026-04-18"
+
+binds:
+  - namespace: env
+    keys:
+      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN
+
+capability:
+  consumes:
+    - type: http
+      namespace: docs-api
+      baseUri: https://docs.googleapis.com
+      description: "Google Docs API v1 for document management."
+      authentication:
+        type: bearer
+        token: "{{GOOGLE_OAUTH_TOKEN}}"
+      resources:
+        - name: documents
+          path: /v1/documents
+          description: "Create Google Docs documents."
+          operations:
+            - name: create-document
+              method: POST
+              description: "Create a blank document with the given title."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+              body:
+                type: json
+                data:
+                  title: "{{tools.title}}"
+        - name: document-details
+          path: /v1/documents/{documentId}
+          description: "Read and manage individual documents."
+          operations:
+            - name: get-document
+              method: GET
+              description: "Get the latest version of a document."
+              inputParameters:
+                - name: documentId
+                  in: path
+                  type: string
+                  required: true
+                  description: "The ID of the document."
+                - name: suggestionsViewMode
+                  in: query
+                  type: string
+                  required: false
+                  description: "Suggestions view mode."
+                - name: includeTabsContent
+                  in: query
+                  type: boolean
+                  required: false
+                  description: "Whether to populate the Document.tabs field."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+        - name: document-batch-update
+          path: /v1/documents/{documentId}:batchUpdate
+          description: "Apply batch updates to a document."
+          operations:
+            - name: batch-update-document
+              method: POST
+              description: "Apply one or more updates to a document."
+              inputParameters:
+                - name: documentId
+                  in: path
+                  type: string
+                  required: true
+                  description: "The ID of the document to update."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+              body:
+                type: json
+                data:
+                  requests: "{{tools.requests}}"
+
+  exposes:
+    - type: rest
+      port: 8100
+      namespace: docs-rest
+      resources:
+        - path: /v1/documents
+          name: documents
+          description: "Document management."
+          operations:
+            - method: POST
+              name: create-document
+              description: "Create a new document."
+              call: "docs-api.create-document"
+        - path: /v1/documents/{id}
+          name: document-details
+          description: "Individual document management."
+          operations:
+            - method: GET
+              name: get-document
+              description: "Get a document."
+              call: "docs-api.get-document"
+              with:
+                documentId: "rest.id"
+
+    - type: mcp
+      port: 9100
+      namespace: docs-mcp
+      transport: http
+      tools:
+        - name: create-document
+          description: "Create a new Google Docs document."
+          hints:
+            readOnly: false
+          call: "docs-api.create-document"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: get-document
+          description: "Get a Google Docs document by ID."
+          hints:
+            readOnly: true
+            idempotent: true
+          call: "docs-api.get-document"
+          with:
+            documentId: "tools.documentId"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: batch-update-document
+          description: "Apply batch updates to a Google Docs document."
+          hints:
+            readOnly: false
+          call: "docs-api.batch-update-document"
+          with:
+            documentId: "tools.documentId"
+          outputParameters:
+            - type: object
+              mapping: "$."

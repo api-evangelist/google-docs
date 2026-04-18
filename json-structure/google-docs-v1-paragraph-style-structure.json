@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "ParagraphStyle",
+  "type": "object",
+  "properties": {
+    "headingId": {
+      "type": "string"
+    },
+    "namedStyleType": {
+      "type": "string"
+    },
+    "alignment": {
+      "type": "string"
+    },
+    "lineSpacing": {
+      "type": "number"
+    },
+    "direction": {
+      "type": "string"
+    },
+    "spacingMode": {
+      "type": "string"
+    },
+    "tabStops": {
+      "type": "array"
+    },
+    "keepLinesTogether": {
+      "type": "boolean"
+    },
+    "keepWithNext": {
+      "type": "boolean"
+    },
+    "avoidWidowAndOrphan": {
+      "type": "boolean"
+    },
+    "pageBreakBefore": {
+      "type": "boolean"
+    }
+  }
+}

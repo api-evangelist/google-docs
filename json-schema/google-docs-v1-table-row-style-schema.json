@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TableRowStyle",
+  "type": "object",
+  "description": "Style properties for a table row.",
+  "properties": {
+    "tableHeader": {
+      "type": "boolean",
+      "description": "Whether the row is a table header."
+    },
+    "preventOverflow": {
+      "type": "boolean",
+      "description": "Whether the row cannot overflow across page or column boundaries."
+    }
+  }
+}

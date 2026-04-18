@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CreateHeaderResponse",
+  "type": "object",
+  "description": "The result of creating a header.",
+  "properties": {
+    "headerId": {
+      "type": "string",
+      "description": "The ID of the created header."
+    }
+  }
+}

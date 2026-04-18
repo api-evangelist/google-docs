@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RichLinkProperties",
+  "type": "object",
+  "description": "Properties specific to a RichLink.",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Output only. The title of the RichLink as displayed in the document."
+    },
+    "uri": {
+      "type": "string",
+      "description": "Output only. The URI of the RichLink."
+    },
+    "mimeType": {
+      "type": "string",
+      "description": "Output only. The MIME type of the RichLink."
+    }
+  }
+}

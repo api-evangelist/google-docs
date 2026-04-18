@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "DocumentTab",
+  "type": "object",
+  "properties": {
+    "headers": {
+      "type": "object"
+    },
+    "footers": {
+      "type": "object"
+    },
+    "footnotes": {
+      "type": "object"
+    },
+    "lists": {
+      "type": "object"
+    },
+    "namedRanges": {
+      "type": "object"
+    },
+    "inlineObjects": {
+      "type": "object"
+    },
+    "positionedObjects": {
+      "type": "object"
+    }
+  }
+}

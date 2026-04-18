@@ -1,0 +1,15 @@
+{
+  "documentId": "500123",
+  "title": "Example Title",
+  "tabs": [],
+  "revisionId": "500123",
+  "headers": "example_value",
+  "footers": "example_value",
+  "footnotes": "example_value",
+  "suggestedDocumentStyleChanges": "example_value",
+  "suggestedNamedStylesChanges": "example_value",
+  "lists": "example_value",
+  "namedRanges": "example_value",
+  "inlineObjects": "example_value",
+  "positionedObjects": "example_value"
+}

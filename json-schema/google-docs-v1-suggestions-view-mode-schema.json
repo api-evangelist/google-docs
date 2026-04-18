@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SuggestionsViewMode",
+  "type": "string",
+  "description": "The suggestions view mode applied to the document, determining how changes from suggestions are represented."
+}

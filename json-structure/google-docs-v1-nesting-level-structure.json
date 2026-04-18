@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/draft/2020-12/schema",
+  "name": "NestingLevel",
+  "type": "object",
+  "properties": {
+    "bulletAlignment": {
+      "type": "string"
+    },
+    "glyphFormat": {
+      "type": "string"
+    },
+    "startNumber": {
+      "type": "integer"
+    },
+    "glyphType": {
+      "type": "string"
+    },
+    "glyphSymbol": {
+      "type": "string"
+    }
+  }
+}

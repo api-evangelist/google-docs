@@ -1,0 +1,13 @@
+{
+  "defaultHeaderId": "500123",
+  "defaultFooterId": "500123",
+  "evenPageHeaderId": "500123",
+  "evenPageFooterId": "500123",
+  "firstPageHeaderId": "500123",
+  "firstPageFooterId": "500123",
+  "useFirstPageHeaderFooter": true,
+  "useEvenPageHeaderFooter": true,
+  "pageNumberStart": 10,
+  "useCustomHeaderFooterMargins": true,
+  "flipPageOrientation": true
+}

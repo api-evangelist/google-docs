@@ -1,0 +1,13 @@
+{
+  "repo": "google-docs",
+  "feeds": [
+    {
+      "source": "https://workspaceupdates.googleblog.com/",
+      "feed_url": "http://feeds.feedburner.com/GoogleAppsUpdates",
+      "saved": 10,
+      "title": "Google Workspace Updates"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-05-03T23:28:53Z"
+}

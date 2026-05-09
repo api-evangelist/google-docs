@@ -3,11 +3,11 @@
   "feeds": [
     {
       "source": "https://workspaceupdates.googleblog.com/",
-      "feed_url": "http://feeds.feedburner.com/GoogleAppsUpdates",
-      "saved": 10,
-      "title": "Google Workspace Updates"
+      "feed_url": "https://workspaceupdates.googleblog.com/atom.xml",
+      "title": "Google Workspace Updates",
+      "saved": 10
     }
   ],
-  "post_count": 10,
-  "fetched": "2026-05-03T23:28:53Z"
+  "post_count": 20,
+  "fetched": "2026-05-09T20:17:51Z"
 }

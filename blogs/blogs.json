@@ -2,12 +2,27 @@
   "repo": "google-docs",
   "feeds": [
     {
-      "source": "https://workspaceupdates.googleblog.com/",
+      "source": "https://workspaceupdates.googleblog.com/atom.xml",
       "feed_url": "https://workspaceupdates.googleblog.com/atom.xml",
-      "title": "Google Workspace Updates",
-      "saved": 15
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://console.cloud.google.com/marketplace/product/google/docs.googleapis.com",
+      "feed_url": "https://console.cloud.google.com/marketplace/product/google/docs.googleapis.com",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://developers.google.com/identity/protocols/oauth2",
+      "feed_url": "https://developers.google.com/identity/protocols/oauth2",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "post_count": 35,
-  "fetched": "2026-05-17T20:20:35Z"
+  "post_count": 50,
+  "fetched": "2026-06-01T23:35:02Z"
 }

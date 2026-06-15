@@ -1,0 +1,129 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Google Docs API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "authorization_code",
+      "authorizationUrl": "https://accounts.google.com/o/oauth2/auth",
+      "accessTokenUrl": "https://oauth2.googleapis.com/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Documents",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Google Docs Create a Document",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://docs.googleapis.com/v1/documents",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://accounts.google.com/o/oauth2/auth",
+              "accessTokenUrl": "https://oauth2.googleapis.com/token",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Creates a blank document using the title given in the request. Other fields in the request, including any provided content, are ignored."
+        },
+        {
+          "info": {
+            "name": "Google Docs Get a Document",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://docs.googleapis.com/v1/documents/:documentId",
+            "params": [
+              {
+                "name": "documentId",
+                "value": "500123",
+                "type": "path",
+                "description": "The ID of the document to retrieve."
+              },
+              {
+                "name": "suggestionsViewMode",
+                "value": "example_value",
+                "type": "query",
+                "description": "The suggestions view mode to apply to the document. This allows viewing the document with all suggestions inline, collapsed, or only previewing suggestions accepted or rejected. If not specified, defaults to DEFAULT_FOR_CURRENT_ACCESS."
+              },
+              {
+                "name": "includeTabsContent",
+                "value": "true",
+                "type": "query",
+                "description": "Whether to populate the Document.tabs field instead of the text content fields like body, documentStyle, headers, etc. When true, content is returned in Document.tabs. When false, content from the first tab populates the legacy content fields."
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://accounts.google.com/o/oauth2/auth",
+              "accessTokenUrl": "https://oauth2.googleapis.com/token",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Gets the latest version of the specified document. Returns the full document resource including content, styling, and metadata."
+        },
+        {
+          "info": {
+            "name": "Google Docs Batch Update a Document",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://docs.googleapis.com/v1/documents/:documentId:batchUpdate",
+            "params": [
+              {
+                "name": "documentId",
+                "value": "500123",
+                "type": "path",
+                "description": "The ID of the document to update."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://accounts.google.com/o/oauth2/auth",
+              "accessTokenUrl": "https://oauth2.googleapis.com/token",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Applies one or more updates to the document. Each request is validated before being applied. If any request is not valid, the entire request will fail and nothing will be applied. Some requests have replies to give you some information about how they are applied. Other requests do not need to return information; these each return an empty reply. The order of replies matches the order of requests."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

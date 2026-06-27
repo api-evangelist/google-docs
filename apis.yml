@@ -278,7 +278,7 @@ apis:
         url: json-ld/google-docs-v1-context.jsonld
       - type: Authentication
         url: https://developers.google.com/docs/api/how-tos/authorizing
-      - type: Quickstart
+      - type: GettingStarted
         url: https://developers.google.com/docs/api/quickstart/python
       - type: Pricing
         url: https://developers.google.com/docs/api/limits
@@ -293,7 +293,7 @@ apis:
       - type: Authentication
         url: https://developers.google.com/workspace/docs/api/auth
         title: Authorization Guide
-      - type: SDK
+      - type: SDKs
         url: https://developers.google.com/workspace/docs/api/how-tos/libraries
         title: Client Libraries
       - type: CodeExamples
@@ -303,35 +303,35 @@ apis:
       - type: Documentation
         url: https://developers.google.com/workspace/docs/api/concepts/document
         title: Concepts
-      - type: Quickstart
+      - type: GettingStarted
         url: https://developers.google.com/workspace/docs/api/quickstart/java
         title: Java Quickstart
-      - type: Quickstart
+      - type: GettingStarted
         url: https://developers.google.com/docs/api/quickstart/nodejs
         title: Node.js Quickstart
-      - type: Quickstart
+      - type: GettingStarted
         url: https://developers.google.com/workspace/docs/api/quickstart/go
         title: Go Quickstart
-      - type: Quickstart
+      - type: GettingStarted
         url: https://developers.google.com/docs/api/quickstart/js
         title: JavaScript Quickstart
       - type: Console
         url: https://console.cloud.google.com/marketplace/product/google/docs.googleapis.com
       - type: Blog
         url: https://workspaceupdates.googleblog.com/
-      - type: SDK
+      - type: SDKs
         url: https://pypi.org/project/google-api-python-client/
         title: Python SDK
-      - type: SDK
+      - type: SDKs
         url: https://www.npmjs.com/package/googleapis
         title: Node.js SDK
-      - type: SDK
+      - type: SDKs
         url: https://search.maven.org/artifact/com.google.apis/google-api-services-docs
         title: Java SDK
-      - type: SDK
+      - type: SDKs
         url: https://pkg.go.dev/google.golang.org/api/docs/v1
         title: Go SDK
-      - type: SDK
+      - type: SDKs
         url: https://github.com/googleapis/google-api-ruby-client
         title: Ruby SDK
 common:

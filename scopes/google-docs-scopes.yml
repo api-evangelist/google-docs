@@ -1,0 +1,43 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/google-docs-api-v1-openapi.yml
+schemes:
+- name: oauth2
+  source: openapi/google-docs-api-v1-openapi.yml
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://accounts.google.com/o/oauth2/auth
+    tokenUrl: https://oauth2.googleapis.com/token
+  description: OAuth 2.0 authentication for Google APIs.
+scopes:
+- scope: https://www.googleapis.com/auth/documents
+  description: View and manage your Google Docs documents
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/google-docs-api-v1-openapi.yml
+- scope: https://www.googleapis.com/auth/documents.readonly
+  description: View your Google Docs documents
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/google-docs-api-v1-openapi.yml
+- scope: https://www.googleapis.com/auth/drive
+  description: See, edit, create, and delete all of your Google Drive files
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/google-docs-api-v1-openapi.yml
+- scope: https://www.googleapis.com/auth/drive.file
+  description: View and manage Google Drive files and folders that you have opened or created
+    with this app
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/google-docs-api-v1-openapi.yml
+- scope: https://www.googleapis.com/auth/drive.readonly
+  description: See and download all your Google Drive files
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/google-docs-api-v1-openapi.yml

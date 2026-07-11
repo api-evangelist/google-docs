@@ -335,6 +335,8 @@ apis:
         url: https://github.com/googleapis/google-api-ruby-client
         title: Ruby SDK
 common:
+  - type: OAuthScopes
+    url: scopes/google-docs-scopes.yml
   - type: Portal
     url: https://developers.google.com/docs
   - type: GettingStarted

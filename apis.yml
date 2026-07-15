@@ -335,6 +335,8 @@ apis:
         url: https://github.com/googleapis/google-api-ruby-client
         title: Ruby SDK
 common:
+  - type: AgenticAccess
+    url: agentic-access/google-docs-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/google-docs-vulnerability-disclosure.yml
   - type: DomainSecurity

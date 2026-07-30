@@ -1,6 +1,19 @@
 aid: google-docs
 name: Google Docs
 description: API for creating, reading, and editing Google Docs documents.
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 image: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
 url: https://raw.githubusercontent.com/api-evangelist/google-docs/refs/heads/main/apis.yml
 created: '2024-01-01'
@@ -8,333 +21,319 @@ modified: '2026-05-19'
 specificationVersion: '0.19'
 type: Index
 apis:
-  - name: Google Docs API
-    description: The Google Docs API lets you create and modify documents.
-    image: https://www.gstatic.com/images/branding/product/2x/docs_48dp.png
-    humanURL: https://developers.google.com/docs/api
-    baseURL: https://docs.googleapis.com
-    tags:
-      - Collaboration
-      - Documents
-      - Google Workspace
-      - Productivity
-      - Word Processing
-    properties:
-      - type: Documentation
-        url: https://developers.google.com/docs/api/reference/rest
-      - type: OpenAPI
-        url: openapi/google-docs-api-v1-openapi.yml
-      - type: JSONSchema
-        url: json-schema/google-docs-document-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-create-document-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-document-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-tab-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-tab-properties-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-document-tab-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-body-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-structural-element-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-paragraph-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-paragraph-element-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-text-run-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-text-style-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-paragraph-style-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-document-style-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-named-styles-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-named-style-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-header-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-footer-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-footnote-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-section-break-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-section-style-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-section-column-properties-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-table-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-table-row-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-table-cell-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-table-cell-style-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-table-cell-border-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-table-cell-location-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-table-column-properties-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-table-row-style-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-table-style-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-table-of-contents-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-table-range-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-batch-update-document-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-batch-update-document-response-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-response-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-write-control-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-location-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-range-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-end-of-segment-location-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-insert-text-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-insert-inline-image-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-insert-inline-image-response-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-insert-inline-sheets-chart-response-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-insert-page-break-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-insert-section-break-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-insert-table-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-insert-table-row-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-insert-table-column-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-delete-content-range-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-delete-footer-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-delete-header-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-delete-named-range-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-delete-paragraph-bullets-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-delete-positioned-object-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-delete-table-column-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-delete-table-row-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-create-header-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-create-header-response-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-create-footer-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-create-footer-response-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-create-footnote-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-create-footnote-response-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-create-named-range-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-create-named-range-response-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-create-paragraph-bullets-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-replace-all-text-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-replace-all-text-response-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-replace-image-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-replace-named-range-content-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-update-document-style-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-update-paragraph-style-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-update-section-style-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-update-table-cell-style-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-update-table-column-properties-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-update-table-row-style-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-update-text-style-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-merge-table-cells-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-unmerge-table-cells-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-pin-table-header-rows-request-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-link-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-linked-content-reference-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-named-range-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-named-ranges-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-inline-object-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-inline-object-element-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-inline-object-properties-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-embedded-object-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-embedded-object-border-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-image-properties-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-positioned-object-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-positioned-object-properties-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-positioned-object-positioning-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-crop-properties-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-size-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-dimension-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-color-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-rgb-color-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-optional-color-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-weighted-font-family-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-paragraph-border-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-shading-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-background-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-tab-stop-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-tabs-criteria-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-nesting-level-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-list-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-list-properties-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-bullet-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-auto-text-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-column-break-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-equation-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-horizontal-rule-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-page-break-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-footnote-reference-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-person-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-person-properties-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-rich-link-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-rich-link-properties-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-sheets-chart-reference-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-substring-match-criteria-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-suggestions-view-mode-schema.json
-      - type: JSONSchema
-        url: json-schema/google-docs-v1-error-schema.json
-      - type: JSONLD
-        url: json-ld/google-docs-context.jsonld
-      - type: JSONLD
-        url: json-ld/google-docs-v1-context.jsonld
-      - type: Authentication
-        url: https://developers.google.com/docs/api/how-tos/authorizing
-      - type: GettingStarted
-        url: https://developers.google.com/docs/api/quickstart/python
-      - type: Pricing
-        url: https://developers.google.com/docs/api/limits
-      - type: TermsOfService
-        url: https://developers.google.com/terms
-      - type: Support
-        url: https://developers.google.com/docs/api/support
-      - type: GettingStarted
-        url: https://developers.google.com/workspace/docs/api/how-tos/overview
-      - type: BestPractices
-        url: https://developers.google.com/workspace/docs/api/how-tos/best-practices
-      - type: Authentication
-        url: https://developers.google.com/workspace/docs/api/auth
-        title: Authorization Guide
-      - type: SDKs
-        url: https://developers.google.com/workspace/docs/api/how-tos/libraries
-        title: Client Libraries
-      - type: CodeExamples
-        url: https://developers.google.com/workspace/docs/api/samples
-      - type: ReleaseNotes
-        url: https://developers.google.com/workspace/docs/release-notes
-      - type: Documentation
-        url: https://developers.google.com/workspace/docs/api/concepts/document
-        title: Concepts
-      - type: GettingStarted
-        url: https://developers.google.com/workspace/docs/api/quickstart/java
-        title: Java Quickstart
-      - type: GettingStarted
-        url: https://developers.google.com/docs/api/quickstart/nodejs
-        title: Node.js Quickstart
-      - type: GettingStarted
-        url: https://developers.google.com/workspace/docs/api/quickstart/go
-        title: Go Quickstart
-      - type: GettingStarted
-        url: https://developers.google.com/docs/api/quickstart/js
-        title: JavaScript Quickstart
-      - type: Console
-        url: https://console.cloud.google.com/marketplace/product/google/docs.googleapis.com
-      - type: Blog
-        url: https://workspaceupdates.googleblog.com/
-      - type: SDKs
-        url: https://pypi.org/project/google-api-python-client/
-        title: Python SDK
-      - type: SDKs
-        url: https://www.npmjs.com/package/googleapis
-        title: Node.js SDK
-      - type: SDKs
-        url: https://search.maven.org/artifact/com.google.apis/google-api-services-docs
-        title: Java SDK
-      - type: SDKs
-        url: https://pkg.go.dev/google.golang.org/api/docs/v1
-        title: Go SDK
-      - type: SDKs
-        url: https://github.com/googleapis/google-api-ruby-client
-        title: Ruby SDK
+- aid: google-docs:google-docs-documents-api
+  name: Google Docs Documents API
+  description: Operations on Google Docs documents
+  humanURL: https://developers.google.com/docs/api
+  baseURL: https://docs.googleapis.com
+  tags:
+  - Documents
+  properties:
+  - type: OpenAPI
+    url: openapi/google-docs-documents-api-openapi.yml
+  - type: Documentation
+    url: https://developers.google.com/docs/api/reference/rest
+  - type: JSONSchema
+    url: json-schema/google-docs-document-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-create-document-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-document-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-tab-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-tab-properties-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-document-tab-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-body-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-structural-element-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-paragraph-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-paragraph-element-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-text-run-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-text-style-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-paragraph-style-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-document-style-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-named-styles-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-named-style-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-header-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-footer-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-footnote-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-section-break-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-section-style-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-section-column-properties-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-table-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-table-row-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-table-cell-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-table-cell-style-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-table-cell-border-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-table-cell-location-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-table-column-properties-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-table-row-style-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-table-style-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-table-of-contents-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-table-range-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-batch-update-document-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-batch-update-document-response-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-response-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-write-control-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-location-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-range-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-end-of-segment-location-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-insert-text-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-insert-inline-image-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-insert-inline-image-response-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-insert-inline-sheets-chart-response-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-insert-page-break-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-insert-section-break-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-insert-table-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-insert-table-row-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-insert-table-column-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-delete-content-range-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-delete-footer-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-delete-header-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-delete-named-range-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-delete-paragraph-bullets-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-delete-positioned-object-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-delete-table-column-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-delete-table-row-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-create-header-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-create-header-response-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-create-footer-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-create-footer-response-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-create-footnote-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-create-footnote-response-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-create-named-range-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-create-named-range-response-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-create-paragraph-bullets-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-replace-all-text-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-replace-all-text-response-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-replace-image-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-replace-named-range-content-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-update-document-style-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-update-paragraph-style-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-update-section-style-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-update-table-cell-style-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-update-table-column-properties-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-update-table-row-style-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-update-text-style-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-merge-table-cells-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-unmerge-table-cells-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-pin-table-header-rows-request-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-link-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-linked-content-reference-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-named-range-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-named-ranges-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-inline-object-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-inline-object-element-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-inline-object-properties-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-embedded-object-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-embedded-object-border-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-image-properties-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-positioned-object-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-positioned-object-properties-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-positioned-object-positioning-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-crop-properties-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-size-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-dimension-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-color-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-rgb-color-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-optional-color-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-weighted-font-family-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-paragraph-border-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-shading-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-background-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-tab-stop-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-tabs-criteria-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-nesting-level-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-list-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-list-properties-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-bullet-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-auto-text-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-column-break-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-equation-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-horizontal-rule-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-page-break-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-footnote-reference-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-person-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-person-properties-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-rich-link-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-rich-link-properties-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-sheets-chart-reference-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-substring-match-criteria-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-suggestions-view-mode-schema.json
+  - type: JSONSchema
+    url: json-schema/google-docs-v1-error-schema.json
+  - type: JSONLD
+    url: json-ld/google-docs-context.jsonld
+  - type: JSONLD
+    url: json-ld/google-docs-v1-context.jsonld
+  - type: Authentication
+    url: https://developers.google.com/docs/api/how-tos/authorizing
+  - type: GettingStarted
+    url: https://developers.google.com/docs/api/quickstart/python
+  - type: Pricing
+    url: https://developers.google.com/docs/api/limits
+  - type: TermsOfService
+    url: https://developers.google.com/terms
+  - type: Support
+    url: https://developers.google.com/docs/api/support
+  - type: GettingStarted
+    url: https://developers.google.com/workspace/docs/api/how-tos/overview
+  - type: BestPractices
+    url: https://developers.google.com/workspace/docs/api/how-tos/best-practices
+  - type: Authentication
+    url: https://developers.google.com/workspace/docs/api/auth
+  - type: SDKs
+    url: https://developers.google.com/workspace/docs/api/how-tos/libraries
+  - type: CodeExamples
+    url: https://developers.google.com/workspace/docs/api/samples
+  - type: ReleaseNotes
+    url: https://developers.google.com/workspace/docs/release-notes
+  - type: Documentation
+    url: https://developers.google.com/workspace/docs/api/concepts/document
+  - type: GettingStarted
+    url: https://developers.google.com/workspace/docs/api/quickstart/java
+  - type: GettingStarted
+    url: https://developers.google.com/docs/api/quickstart/nodejs
+  - type: GettingStarted
+    url: https://developers.google.com/workspace/docs/api/quickstart/go
+  - type: GettingStarted
+    url: https://developers.google.com/docs/api/quickstart/js
+  - type: Console
+    url: https://console.cloud.google.com/marketplace/product/google/docs.googleapis.com
+  - type: Blog
+    url: https://workspaceupdates.googleblog.com/
+  - type: SDKs
+    url: https://pypi.org/project/google-api-python-client/
+  - type: SDKs
+    url: https://www.npmjs.com/package/googleapis
+  - type: SDKs
+    url: https://search.maven.org/artifact/com.google.apis/google-api-services-docs
+  - type: SDKs
+    url: https://pkg.go.dev/google.golang.org/api/docs/v1
+  - type: SDKs
+    url: https://github.com/googleapis/google-api-ruby-client
 common:
+  - type: PostmanWorkspace
+    url: https://www.postman.com/kinlaneapi/google-docs/overview
   - type: AgenticAccess
     url: agentic-access/google-docs-agentic-access.yml
   - type: VulnerabilityDisclosure

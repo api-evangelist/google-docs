@@ -1,0 +1,14 @@
+{
+  "provider": "google-docs",
+  "sources": [
+    "google-docs-documents-api-openapi.yml"
+  ],
+  "outputs": [
+    "google-docs-documents-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

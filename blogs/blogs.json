@@ -5,7 +5,7 @@
       "source": "http://feeds.feedburner.com/GoogleAppsUpdates",
       "feed_url": "http://feeds.feedburner.com/GoogleAppsUpdates",
       "title": "",
-      "saved": 0,
+      "saved": 8,
       "method": "feed"
     },
     {
@@ -13,16 +13,18 @@
       "feed_url": "https://console.cloud.google.com/marketplace/product/google/docs.googleapis.com",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     },
     {
       "source": "https://developers.google.com/identity/protocols/oauth2",
       "feed_url": "https://developers.google.com/identity/protocols/oauth2",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     }
   ],
-  "post_count": 134,
-  "fetched": "2026-08-06T14:08:46Z"
+  "post_count": 142,
+  "fetched": "2026-08-15T12:11:08Z"
 }

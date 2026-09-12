@@ -2,15 +2,6 @@
   "repo": "google-docs",
   "feeds": [
     {
-      "source": "http://feeds.feedburner.com/GoogleAppsUpdates",
-      "feed_url": "http://feeds.feedburner.com/GoogleAppsUpdates",
-      "title": "",
-      "saved": 0,
-      "method": "feed",
-      "nature": "undetermined",
-      "nature_basis": null
-    },
-    {
       "source": "https://console.cloud.google.com/marketplace/product/google/docs.googleapis.com",
       "feed_url": "https://console.cloud.google.com/marketplace/product/google/docs.googleapis.com",
       "title": "",
@@ -23,10 +14,17 @@
       "title": "",
       "saved": 0,
       "method": "none"
+    },
+    {
+      "source": "http://feeds.feedburner.com/GoogleAppsUpdates",
+      "feed_url": "http://feeds.feedburner.com/GoogleAppsUpdates",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
     }
   ],
-  "post_count": 167,
-  "fetched": "2026-08-30T22:33:40Z",
+  "post_count": 176,
+  "fetched": "2026-09-06T19:17:18Z",
   "feed_nature": "undetermined",
   "feed_nature_basis": null,
   "feed_nature_note": "Whether these posts are the vendor publishing or its support community, decided on the URL path grammar of the saved posts -- not the hostname, which carries both on Khoros, and not author diversity, which flags large vendor blogs as forums. 'undetermined' means undetermined."

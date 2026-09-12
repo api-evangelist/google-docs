@@ -344,6 +344,8 @@ apis:
   - type: SDKs
     url: https://github.com/googleapis/google-api-ruby-client
 common:
+  - type: Website
+    url: https://www.google.com/
   - type: PostmanWorkspace
     url: https://www.postman.com/kinlaneapi/google-docs/overview
   - type: AgenticAccess
@@ -423,3 +425,5 @@ tags:
   - Google Workspace
   - Productivity
   - Word Processing
+x-parent: google
+x-relationship: product

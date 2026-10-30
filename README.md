@@ -1,4 +1,4 @@
-# Google Docs (google-docs)
+# Google Docs
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,215 +66,242 @@
 
 API for creating, reading, and editing Google Docs documents.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/google-docs/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/google-docs/refs/heads/main/apis.yml)
+**Areas:** Collaboration · Documents · Google Workspace · Productivity · Word Processing
 
-## Scope
+## Google Docs on APIs.io
 
-- **Type:** Index
+Everything profiled for Google Docs is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/google-docs/](https://apis.io/providers/google-docs/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- Collaboration
-- Documents
-- Google Workspace
-- Productivity
-- Word Processing
+- [Google Docs Documents API](https://apis.io/apis/google-docs/google-docs-documents-api/) — Operations on Google Docs documents
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-01-01
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Google Docs API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The Google Docs API lets you create and modify documents.
+- [Google Docs Agentic Access](https://apis.io/agentic-access/google-docs/google-docs-agentic-access/)
 
-- **Human URL:** [https://developers.google.com/docs/api](https://developers.google.com/docs/api)
-- **Base URL:** `https://docs.googleapis.com`
+#### JSON Schema (124)
 
-#### Tags
+The data models the API reads and writes.
 
-- Collaboration
-- Documents
-- Google Workspace
-- Productivity
-- Word Processing
+- [Google Docs Document](https://apis.io/schemas/google-docs/google-docs-document/)
+- [AutoText](https://apis.io/schemas/google-docs/google-docs-v1-auto-text/)
+- [Background](https://apis.io/schemas/google-docs/google-docs-v1-background/)
+- [BatchUpdateDocumentRequest](https://apis.io/schemas/google-docs/google-docs-v1-batch-update-document-request/)
+- [BatchUpdateDocumentResponse](https://apis.io/schemas/google-docs/google-docs-v1-batch-update-document-response/)
+- [Body](https://apis.io/schemas/google-docs/google-docs-v1-body/)
+- [Bullet](https://apis.io/schemas/google-docs/google-docs-v1-bullet/)
+- [Color](https://apis.io/schemas/google-docs/google-docs-v1-color/)
+- [ColumnBreak](https://apis.io/schemas/google-docs/google-docs-v1-column-break/)
+- [CreateDocumentRequest](https://apis.io/schemas/google-docs/google-docs-v1-create-document-request/)
+- [CreateFooterRequest](https://apis.io/schemas/google-docs/google-docs-v1-create-footer-request/)
+- [CreateFooterResponse](https://apis.io/schemas/google-docs/google-docs-v1-create-footer-response/)
+- [CreateFootnoteRequest](https://apis.io/schemas/google-docs/google-docs-v1-create-footnote-request/)
+- [CreateFootnoteResponse](https://apis.io/schemas/google-docs/google-docs-v1-create-footnote-response/)
+- [CreateHeaderRequest](https://apis.io/schemas/google-docs/google-docs-v1-create-header-request/)
+- [CreateHeaderResponse](https://apis.io/schemas/google-docs/google-docs-v1-create-header-response/)
+- [CreateNamedRangeRequest](https://apis.io/schemas/google-docs/google-docs-v1-create-named-range-request/)
+- [CreateNamedRangeResponse](https://apis.io/schemas/google-docs/google-docs-v1-create-named-range-response/)
+- [CreateParagraphBulletsRequest](https://apis.io/schemas/google-docs/google-docs-v1-create-paragraph-bullets-request/)
+- [CropProperties](https://apis.io/schemas/google-docs/google-docs-v1-crop-properties/)
+- [DeleteContentRangeRequest](https://apis.io/schemas/google-docs/google-docs-v1-delete-content-range-request/)
+- [DeleteFooterRequest](https://apis.io/schemas/google-docs/google-docs-v1-delete-footer-request/)
+- [DeleteHeaderRequest](https://apis.io/schemas/google-docs/google-docs-v1-delete-header-request/)
+- [DeleteNamedRangeRequest](https://apis.io/schemas/google-docs/google-docs-v1-delete-named-range-request/)
+- [DeleteParagraphBulletsRequest](https://apis.io/schemas/google-docs/google-docs-v1-delete-paragraph-bullets-request/)
+- …and 99 more published on APIs.io
 
-#### Properties
+#### JSON Structure (123)
 
-- [Documentation](https://developers.google.com/docs/api/reference/rest)
-- [OpenAPI](openapi/google-docs-api-v1-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/google-docs-api-v1.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/google-docs-api-v1.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [JSON Schema](json-schema/google-docs-document-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-create-document-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-document-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-tab-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-tab-properties-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-document-tab-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-body-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-structural-element-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-paragraph-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-paragraph-element-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-text-run-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-text-style-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-paragraph-style-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-document-style-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-named-styles-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-named-style-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-header-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-footer-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-footnote-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-section-break-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-section-style-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-section-column-properties-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-table-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-table-row-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-table-cell-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-table-cell-style-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-table-cell-border-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-table-cell-location-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-table-column-properties-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-table-row-style-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-table-style-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-table-of-contents-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-table-range-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-batch-update-document-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-batch-update-document-response-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-response-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-write-control-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-location-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-range-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-end-of-segment-location-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-insert-text-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-insert-inline-image-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-insert-inline-image-response-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-insert-inline-sheets-chart-response-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-insert-page-break-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-insert-section-break-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-insert-table-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-insert-table-row-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-insert-table-column-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-delete-content-range-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-delete-footer-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-delete-header-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-delete-named-range-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-delete-paragraph-bullets-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-delete-positioned-object-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-delete-table-column-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-delete-table-row-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-create-header-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-create-header-response-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-create-footer-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-create-footer-response-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-create-footnote-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-create-footnote-response-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-create-named-range-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-create-named-range-response-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-create-paragraph-bullets-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-replace-all-text-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-replace-all-text-response-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-replace-image-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-replace-named-range-content-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-update-document-style-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-update-paragraph-style-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-update-section-style-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-update-table-cell-style-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-update-table-column-properties-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-update-table-row-style-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-update-text-style-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-merge-table-cells-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-unmerge-table-cells-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-pin-table-header-rows-request-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-link-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-linked-content-reference-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-named-range-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-named-ranges-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-inline-object-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-inline-object-element-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-inline-object-properties-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-embedded-object-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-embedded-object-border-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-image-properties-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-positioned-object-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-positioned-object-properties-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-positioned-object-positioning-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-crop-properties-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-size-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-dimension-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-color-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-rgb-color-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-optional-color-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-weighted-font-family-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-paragraph-border-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-shading-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-background-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-tab-stop-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-tabs-criteria-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-nesting-level-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-list-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-list-properties-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-bullet-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-auto-text-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-column-break-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-equation-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-horizontal-rule-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-page-break-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-footnote-reference-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-person-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-person-properties-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-rich-link-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-rich-link-properties-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-sheets-chart-reference-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-substring-match-criteria-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-suggestions-view-mode-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/google-docs-v1-error-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON-LD](json-ld/google-docs-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/google-docs-v1-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Authentication](https://developers.google.com/docs/api/how-tos/authorizing)
-- [Quickstart](https://developers.google.com/docs/api/quickstart/python)
-- [Pricing](https://developers.google.com/docs/api/limits)
-- [Terms of Service](https://developers.google.com/terms)
-- [Support](https://developers.google.com/docs/api/support)
-- [Getting Started](https://developers.google.com/workspace/docs/api/how-tos/overview)
-- [Best Practices](https://developers.google.com/workspace/docs/api/how-tos/best-practices)
-- [Authentication](https://developers.google.com/workspace/docs/api/auth)
-- [SDK](https://developers.google.com/workspace/docs/api/how-tos/libraries)
-- [Code Examples](https://developers.google.com/workspace/docs/api/samples)
-- [Release Notes](https://developers.google.com/workspace/docs/release-notes)
-- [Documentation](https://developers.google.com/workspace/docs/api/concepts/document)
-- [Quickstart](https://developers.google.com/workspace/docs/api/quickstart/java)
-- [Quickstart](https://developers.google.com/docs/api/quickstart/nodejs)
-- [Quickstart](https://developers.google.com/workspace/docs/api/quickstart/go)
-- [Quickstart](https://developers.google.com/docs/api/quickstart/js)
-- [Console](https://console.cloud.google.com/marketplace/product/google/docs.googleapis.com)
+Data models expressed in JSON Structure.
+
+- [Google Docs V1 Auto Text Structure](https://apis.io/json-structure/google-docs/google-docs-v1-auto-text-structure/)
+- [Google Docs V1 Background Structure](https://apis.io/json-structure/google-docs/google-docs-v1-background-structure/)
+- [Google Docs V1 Batch Update Document Request Structure](https://apis.io/json-structure/google-docs/google-docs-v1-batch-update-document-request-structure/)
+- [Google Docs V1 Batch Update Document Response Structure](https://apis.io/json-structure/google-docs/google-docs-v1-batch-update-document-response-structure/)
+- [Google Docs V1 Body Structure](https://apis.io/json-structure/google-docs/google-docs-v1-body-structure/)
+- [Google Docs V1 Bullet Structure](https://apis.io/json-structure/google-docs/google-docs-v1-bullet-structure/)
+- [Google Docs V1 Color Structure](https://apis.io/json-structure/google-docs/google-docs-v1-color-structure/)
+- [Google Docs V1 Column Break Structure](https://apis.io/json-structure/google-docs/google-docs-v1-column-break-structure/)
+- [Google Docs V1 Create Document Request Structure](https://apis.io/json-structure/google-docs/google-docs-v1-create-document-request-structure/)
+- [Google Docs V1 Create Footer Request Structure](https://apis.io/json-structure/google-docs/google-docs-v1-create-footer-request-structure/)
+- [Google Docs V1 Create Footer Response Structure](https://apis.io/json-structure/google-docs/google-docs-v1-create-footer-response-structure/)
+- [Google Docs V1 Create Footnote Request Structure](https://apis.io/json-structure/google-docs/google-docs-v1-create-footnote-request-structure/)
+- [Google Docs V1 Create Footnote Response Structure](https://apis.io/json-structure/google-docs/google-docs-v1-create-footnote-response-structure/)
+- [Google Docs V1 Create Header Request Structure](https://apis.io/json-structure/google-docs/google-docs-v1-create-header-request-structure/)
+- [Google Docs V1 Create Header Response Structure](https://apis.io/json-structure/google-docs/google-docs-v1-create-header-response-structure/)
+- [Google Docs V1 Create Named Range Request Structure](https://apis.io/json-structure/google-docs/google-docs-v1-create-named-range-request-structure/)
+- [Google Docs V1 Create Named Range Response Structure](https://apis.io/json-structure/google-docs/google-docs-v1-create-named-range-response-structure/)
+- [Google Docs V1 Create Paragraph Bullets Request Structure](https://apis.io/json-structure/google-docs/google-docs-v1-create-paragraph-bullets-request-structure/)
+- [Google Docs V1 Crop Properties Structure](https://apis.io/json-structure/google-docs/google-docs-v1-crop-properties-structure/)
+- [Google Docs V1 Delete Content Range Request Structure](https://apis.io/json-structure/google-docs/google-docs-v1-delete-content-range-request-structure/)
+- [Google Docs V1 Delete Footer Request Structure](https://apis.io/json-structure/google-docs/google-docs-v1-delete-footer-request-structure/)
+- [Google Docs V1 Delete Header Request Structure](https://apis.io/json-structure/google-docs/google-docs-v1-delete-header-request-structure/)
+- [Google Docs V1 Delete Named Range Request Structure](https://apis.io/json-structure/google-docs/google-docs-v1-delete-named-range-request-structure/)
+- [Google Docs V1 Delete Paragraph Bullets Request Structure](https://apis.io/json-structure/google-docs/google-docs-v1-delete-paragraph-bullets-request-structure/)
+- [Google Docs V1 Delete Positioned Object Request Structure](https://apis.io/json-structure/google-docs/google-docs-v1-delete-positioned-object-request-structure/)
+- …and 98 more published on APIs.io
+
+#### JSON-LD (2)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Google Docs Context](https://apis.io/jsonld/google-docs/google-docs-context/)
+- [Google Docs V1 Context](https://apis.io/jsonld/google-docs/google-docs-v1-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [google-docs API Vocabulary](https://apis.io/vocabularies/google-docs/google-docs-vocabulary/)
+
+#### Examples (123)
+
+Example requests and responses.
+
+- [Google Docs V1 Auto Text Example](https://apis.io/examples/google-docs/google-docs-v1-auto-text-example/)
+- [Google Docs V1 Background Example](https://apis.io/examples/google-docs/google-docs-v1-background-example/)
+- [Google Docs V1 Batch Update Document Request Example](https://apis.io/examples/google-docs/google-docs-v1-batch-update-document-request-example/)
+- [Google Docs V1 Batch Update Document Response Example](https://apis.io/examples/google-docs/google-docs-v1-batch-update-document-response-example/)
+- [Google Docs V1 Body Example](https://apis.io/examples/google-docs/google-docs-v1-body-example/)
+- [Google Docs V1 Bullet Example](https://apis.io/examples/google-docs/google-docs-v1-bullet-example/)
+- [Google Docs V1 Color Example](https://apis.io/examples/google-docs/google-docs-v1-color-example/)
+- [Google Docs V1 Column Break Example](https://apis.io/examples/google-docs/google-docs-v1-column-break-example/)
+- [Google Docs V1 Create Document Request Example](https://apis.io/examples/google-docs/google-docs-v1-create-document-request-example/)
+- [Google Docs V1 Create Footer Request Example](https://apis.io/examples/google-docs/google-docs-v1-create-footer-request-example/)
+- [Google Docs V1 Create Footer Response Example](https://apis.io/examples/google-docs/google-docs-v1-create-footer-response-example/)
+- [Google Docs V1 Create Footnote Request Example](https://apis.io/examples/google-docs/google-docs-v1-create-footnote-request-example/)
+- [Google Docs V1 Create Footnote Response Example](https://apis.io/examples/google-docs/google-docs-v1-create-footnote-response-example/)
+- [Google Docs V1 Create Header Request Example](https://apis.io/examples/google-docs/google-docs-v1-create-header-request-example/)
+- [Google Docs V1 Create Header Response Example](https://apis.io/examples/google-docs/google-docs-v1-create-header-response-example/)
+- [Google Docs V1 Create Named Range Request Example](https://apis.io/examples/google-docs/google-docs-v1-create-named-range-request-example/)
+- [Google Docs V1 Create Named Range Response Example](https://apis.io/examples/google-docs/google-docs-v1-create-named-range-response-example/)
+- [Google Docs V1 Create Paragraph Bullets Request Example](https://apis.io/examples/google-docs/google-docs-v1-create-paragraph-bullets-request-example/)
+- [Google Docs V1 Crop Properties Example](https://apis.io/examples/google-docs/google-docs-v1-crop-properties-example/)
+- [Google Docs V1 Delete Content Range Request Example](https://apis.io/examples/google-docs/google-docs-v1-delete-content-range-request-example/)
+- [Google Docs V1 Delete Footer Request Example](https://apis.io/examples/google-docs/google-docs-v1-delete-footer-request-example/)
+- [Google Docs V1 Delete Header Request Example](https://apis.io/examples/google-docs/google-docs-v1-delete-header-request-example/)
+- [Google Docs V1 Delete Named Range Request Example](https://apis.io/examples/google-docs/google-docs-v1-delete-named-range-request-example/)
+- [Google Docs V1 Delete Paragraph Bullets Request Example](https://apis.io/examples/google-docs/google-docs-v1-delete-paragraph-bullets-request-example/)
+- [Google Docs V1 Delete Positioned Object Request Example](https://apis.io/examples/google-docs/google-docs-v1-delete-positioned-object-request-example/)
+- …and 98 more published on APIs.io
+
+#### Collections (3)
+
+Postman and Open Collection request collections.
+
+- [Google Docs API](https://apis.io/collections/google-docs/open-google-docs-api-v1/)
+- [Google Docs Documents API](https://apis.io/collections/google-docs/open-google-docs-documents-api/)
+- [Google Docs Documents API](https://apis.io/collections/google-docs/postman-google-docs-documents-api/)
+
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [Google Docs — jsonschema rules](https://apis.io/rules/google-docs/google-docs-jsonschema-spectral-rules/)
+- [Google Docs API Rules](https://apis.io/rules/google-docs/google-docs-spectral-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Google Docs Authentication](https://apis.io/security/google-docs/google-docs-authentication/)
+- [Google Docs Domain Security](https://apis.io/security/google-docs/google-docs-domain-security/)
+- [Google Docs Vulnerability Disclosure](https://apis.io/security/google-docs/google-docs-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Google Docs Scopes](https://apis.io/scopes/google-docs/google-docs-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Google Docs Plans Pricing](https://apis.io/plans/google-docs/google-docs-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Google Docs Rate Limits](https://apis.io/rate-limits/google-docs/google-docs-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Google Docs Finops](https://apis.io/finops/google-docs/google-docs-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.google.com/)
+- [Getting started](https://developers.google.com/workspace/guides/enable-apis)
 - [Blog](https://workspaceupdates.googleblog.com/)
-- [SDK](https://pypi.org/project/google-api-python-client/)
-- [SDK](https://www.npmjs.com/package/googleapis)
-- [SDK](https://search.maven.org/artifact/com.google.apis/google-api-services-docs)
-- [SDK](https://pkg.go.dev/google.golang.org/api/docs/v1)
-- [SDK](https://github.com/googleapis/google-api-ruby-client)
+- [Terms of service](https://developers.google.com/terms)
+- [Privacy policy](https://policies.google.com/privacy)
+- [GitHub](https://github.com/googleapis)
+- [Status](https://www.google.com/appsstatus/dashboard/)
 
-## Common Properties
+## API Evangelist rating
 
-- [Portal](https://developers.google.com/docs)
-- [Getting Started](https://developers.google.com/workspace/guides/enable-apis)
-- [Authentication](https://developers.google.com/identity/protocols/oauth2)
-- [Blog](https://workspaceupdates.googleblog.com/)
-- [Terms of Service](https://developers.google.com/terms)
-- [Privacy Policy](https://policies.google.com/privacy)
-- [Status Page](https://www.google.com/appsstatus/dashboard/)
-- [GitHub Organization](https://github.com/googleapis)
-- [Spectral Rules](rules/google-docs-spectral-rules.yml)
-- [Vocabulary](vocabulary/google-docs-vocabulary.yaml)
-- [Features](undefined)
-- [Use Cases](undefined)
-- [Integrations](undefined)
+**Kin Score 57.9** — strong · rubric 0.25.0 · scored 2026-10-23
 
-## Maintainers
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 70.0 |
+| Contract governance | 27.3 |
+| Operational transparency | 52.6 |
+| Developer ergonomics | 67.9 |
+| Access clarity | 39.5 |
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Agent readiness 35.1** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | negotiable (partial credit) |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | documented (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 40.2** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/google-docs/](https://apis.io/providers/google-docs/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Google Docs: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/google-docs/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
